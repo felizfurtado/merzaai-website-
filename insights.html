@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F6F4E8">
+<title>Insights | Merzaai</title>
+<meta name="description" content="Perspectives on business transformation, treasury, financial clarity and better decision-making.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/insights.css">
+
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="header" id="header">
+  <a href="index.html" class="logo" aria-label="Merzaai home">
+    <img src="logo2.png" alt="Merzaai">
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="what-we-solve.html">What We Solve</a>
+    <a href="the-psychology-of-transformation.html">Psychology</a>
+    <a href="the-merzaai-method.html">Our Method</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html" class="nav-cta">Let's Talk ↗</a>
+</nav>
+</header>
+
+<!-- LANDING PAGE -->
+
+<main class="landing-content" id="landingContent">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-top">
+        <div>
+          <div class="eyebrow">Ideas. Perspectives. Clarity.</div>
+          <h1>Thinking beyond<br>the <span>numbers.</span></h1>
+        </div>
+        <p class="hero-description">
+          Perspectives on the decisions, structures and transformations
+          that shape better businesses. Thoughtful insights for leaders
+          navigating complexity.
+        </p>
+      </div>
+
+      <div class="hero-bottom">
+        <p>A SPACE FOR IDEAS THAT MOVE BUSINESS FORWARD</p>
+        <span class="hero-index">MERZAAI / INSIGHTS — 01</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTICLE -->
+
+  <section class="featured-section">
+    <div class="container">
+      <article class="featured">
+        <div class="featured-image">
+          <img
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+            alt="Modern workspace with a collaborative meeting area">
+        </div>
+
+        <div class="featured-content">
+          <div class="featured-label">Featured perspective</div>
+          <h2>When complexity grows, clarity becomes a competitive advantage.</h2>
+          <p>
+            As businesses evolve, decisions become more interconnected.
+            Discover why seeing the bigger picture is essential to moving
+            forward with confidence.
+          </p>
+
+          <div class="article-meta">
+            <span>Business Transformation</span>
+            <span>8 min read</span>
+          </div>
+
+          <a href="#article-complexity" class="read-link" data-article="complexity">
+            Explore the perspective <span>↗</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ARTICLE INTRO -->
+
+  <section class="content-intro">
+    <div class="container">
+      <div class="content-intro-inner">
+        <h2>Ideas worth<br>thinking about.</h2>
+        <p>
+          Explore practical perspectives on financial management,
+          organisational change and the decisions that help businesses
+          perform with greater confidence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-top">
+
+        <div class="filters">
+          <button class="filter-btn active" data-category="all">All insights</button>
+          <button class="filter-btn" data-category="transformation">Transformation</button>
+          <button class="filter-btn" data-category="treasury">Treasury</button>
+          <button class="filter-btn" data-category="finance">Financial Clarity</button>
+          <button class="filter-btn" data-category="leadership">Leadership</button>
+        </div>
+
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="search" id="articleSearch" placeholder="Search insights..." aria-label="Search insights">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE LIST -->
+
+  <section class="articles-section">
+    <div class="container">
+
+      <div class="articles-top">
+        <p>EXPLORE OUR THINKING</p>
+        <p><strong id="articleCount">06</strong> perspectives</p>
+      </div>
+
+      <div class="article-grid" id="articleGrid">
+
+        <article class="article-card" data-category="transformation"
+          data-search="business transformation complexity clarity change organisation">
+          <a href="#article-complexity" class="card-image" data-article="complexity">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"
+              alt="Team collaborating around a table" loading="lazy">
+          </a>
+          <div class="card-category">Transformation</div>
+          <h3>When complexity grows, clarity becomes a competitive advantage.</h3>
+          <p>Why understanding the connections across a business matters more than addressing isolated problems.</p>
+          <div class="card-bottom">
+            <span>8 min read</span>
+            <a href="#article-complexity" data-article="complexity" aria-label="Read article">↗</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="treasury"
+          data-search="treasury cash visibility liquidity management cash">
+          <a href="#article-cash" class="card-image" data-article="cash">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85"
+              alt="Financial analytics displayed on a computer" loading="lazy">
+          </a>
+          <div class="card-category">Treasury</div>
+          <h3>Cash visibility is more than knowing your balance.</h3>
+          <p>Understanding where cash sits, how it moves and what it means for the decisions ahead.</p>
+          <div class="card-bottom">
+            <span>6 min read</span>
+            <a href="#article-cash" data-article="cash" aria-label="Read article">↗</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="finance"
+          data-search="financial reporting numbers decision making financial information">
+          <a href="#article-numbers" class="card-image" data-article="numbers">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=85"
+              alt="Financial documents and calculator" loading="lazy">
+          </a>
+          <div class="card-category">Financial Clarity</div>
+          <h3>Better decisions begin with better financial information.</h3>
+          <p>Moving beyond reports to understand what financial information is really telling you.</p>
+          <div class="card-bottom">
+            <span>7 min read</span>
+            <a href="#article-numbers" data-article="numbers" aria-label="Read article">↗</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="leadership"
+          data-search="leadership strategic decisions business priorities">
+          <a href="#article-decisions" class="card-image" data-article="decisions">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
+              alt="Minimal contemporary office interior" loading="lazy">
+          </a>
+          <div class="card-category">Leadership</div>
+          <h3>The value of slowing down before making the next big decision.</h3>
+          <p>Why taking time to understand the situation can create better momentum later.</p>
+          <div class="card-bottom">
+            <span>5 min read</span>
+            <a href="#article-decisions" data-article="decisions" aria-label="Read article">↗</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="treasury"
+          data-search="cash flow forecasting liquidity planning treasury">
+          <a href="#article-forecasting" class="card-image" data-article="forecasting">
+            <img src="https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=900&q=85"
+              alt="Architectural structure viewed from below" loading="lazy">
+          </a>
+          <div class="card-category">Treasury</div>
+          <h3>From cash flow reporting to forward-looking planning.</h3>
+          <p>How a more connected view of cash flow can support stronger planning and preparedness.</p>
+          <div class="card-bottom">
+            <span>6 min read</span>
+            <a href="#article-forecasting" data-article="forecasting" aria-label="Read article">↗</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="transformation"
+          data-search="business transformation implementation change strategy">
+          <a href="#article-change" class="card-image" data-article="change">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=85"
+              alt="Bright modern office workspace" loading="lazy">
+          </a>
+          <div class="card-category">Transformation</div>
+          <h3>Transformation is not a destination. It is a way of working.</h3>
+          <p>Why lasting change depends on how new ways of working become part of everyday operations.</p>
+          <div class="card-bottom">
+            <span>7 min read</span>
+            <a href="#article-change" data-article="change" aria-label="Read article">↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="no-results" id="noResults">
+        No insights found. Try another search or category.
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- ARTICLE DETAIL VIEW -->
+
+<section class="article-detail" id="articleDetail">
+  <div class="container detail-hero">
+    <a href="insights.html" class="back-link" id="backLink">← Back to all insights</a>
+    <div class="detail-category" id="detailCategory"></div>
+    <h1 id="detailTitle"></h1>
+    <p class="detail-subtitle" id="detailSubtitle"></p>
+    <div class="detail-meta">
+      <span id="detailReadTime"></span>
+      <span>Merzaai Perspectives</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <img class="detail-image" id="detailImage" src="" alt="">
+  </div>
+
+  <div class="detail-body" id="detailBody"></div>
+
+  <section class="detail-related">
+    <div class="container">
+      <h2>Continue exploring.</h2>
+      <div class="article-grid" id="relatedGrid"></div>
+    </div>
+  </section>
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <div class="eyebrow">The conversation starts here</div>
+        <h2>Have a challenge worth thinking through?</h2>
+        <p>
+          Every business has its own complexities. Let's explore what
+          clarity could make possible for yours.
+        </p>
+      </div>
+
+      <a href="contact.html" class="light-button">
+        Start a conversation <span>↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer-main">
+
+    <div class="footer-brand">
+      <a href="index.html" aria-label="Merzaai home">
+        <img src="logo2.png" alt="Merzaai">
+      </a>
+      <p>
+        Bringing clarity to complexity. Helping businesses see
+        connections, make informed decisions and move forward.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="what-we-solve.html">What We Solve</a>
+      <a href="the-merzaai-method.html">Our Method</a>
+      <a href="insights.html">Insights</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Merzaai. All rights reserved.</span>
+    <span>Clarity in every connection.</span>
+  </div>
+</footer>
+
+<script>
+/* HEADER STATE + SCROLL PROGRESS */
+
+(() => {
+  const header = document.getElementById("header");
+  const bar = document.getElementById("progress");
+  let ticking = false;
+
+  const update = () => {
+    const y = window.scrollY;
+    header.classList.toggle("scrolled", y > 20);
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`;
+    ticking = false;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  update();
+})();
+
+/* MOBILE NAV */
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = mainNav.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+
+mainNav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    mainNav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+/* REVEAL ON SCROLL (static landing elements only) */
+
+(() => {
+  if (!("IntersectionObserver" in window)) return;
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: "0px 0px -4% 0px" });
+
+  document.querySelectorAll(".featured, .content-intro-inner, #articleGrid .article-card").forEach((el, i) => {
+    const siblings = [...el.parentElement.children];
+    el.style.setProperty("--d", `${Math.min(siblings.indexOf(el) % 3, 5) * 0.08}s`);
+    el.classList.add("reveal");
+    io.observe(el);
+  });
+})();
+
+/* ARTICLE DATA */
+
+const articles = {
+  complexity: {
+    category: "Transformation",
+    title: "When complexity grows, clarity becomes a competitive advantage.",
+    subtitle: "Why understanding the connections across a business matters more than addressing isolated problems.",
+    read: "8 min read",
+    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=85",
+    body: `
+      <p>As businesses grow, the number of moving parts grows with them. Teams expand, processes become more interconnected, information moves across systems and decisions begin to affect more areas of the organisation.</p>
+
+      <p>What once felt straightforward can become difficult to navigate. A challenge that appears isolated may have roots in a completely different part of the business.</p>
+
+      <h2>Complexity rarely exists in isolation.</h2>
+
+      <p>A reporting issue may be connected to how information is collected. A delay in decision-making may reflect unclear responsibilities. An operational challenge may have financial consequences that are not immediately visible.</p>
+
+      <p>Looking at each issue independently can lead to solutions that address symptoms without understanding the wider picture.</p>
+
+      <div class="detail-quote">Clarity begins when individual challenges are understood as part of a larger system.</div>
+
+      <h2>See the connections before choosing the solution.</h2>
+
+      <p>A more connected view helps leaders understand how different parts of the organisation influence one another. It creates room to question assumptions, identify underlying causes and evaluate the implications of possible changes.</p>
+
+      <p>Instead of moving directly from problem to solution, the organisation can take a more considered approach: understand the current position, establish what needs to change and determine how progress should be measured.</p>
+
+      <h2>Make clarity part of how business moves forward.</h2>
+
+      <p>Clarity is not simply having more information. It is being able to interpret that information, understand what matters and use it to make decisions with purpose.</p>
+
+      <p>When people share an understanding of the situation and the direction ahead, complexity becomes easier to navigate. That is where meaningful progress can begin.</p>
+    `
+  },
+
+  cash: {
+    category: "Treasury",
+    title: "Cash visibility is more than knowing your balance.",
+    subtitle: "Understanding where cash sits, how it moves and what it means for the decisions ahead.",
+    read: "6 min read",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=85",
+    body: `
+      <p>Knowing the balance in a bank account provides one piece of information. It does not necessarily provide a complete picture of an organisation's cash position.</p>
+
+      <p>Cash may be distributed across multiple accounts, entities, banks and currencies. Some funds may be committed, restricted or required for near-term obligations.</p>
+
+      <h2>Visibility needs to go beyond balances.</h2>
+
+      <p>A useful view of cash brings together information from across the organisation. It helps answer where funds are held, what is available, what is expected to move and when those movements are likely to happen.</p>
+
+      <h2>Connect today's position with tomorrow's needs.</h2>
+
+      <p>Cash visibility becomes more valuable when it is connected to expected receipts, payments, operational requirements and planned investments.</p>
+
+      <p>This creates a stronger foundation for understanding liquidity needs and evaluating the timing of financial decisions.</p>
+
+      <div class="detail-quote">A balance tells you where you are. Visibility helps you understand what comes next.</div>
+
+      <h2>Build a more connected treasury view.</h2>
+
+      <p>Consistent information, clear reporting and defined processes can help create a more reliable picture of cash across the organisation.</p>
+
+      <p>The objective is not simply to produce another report. It is to make cash information more useful to the people responsible for managing it.</p>
+    `
+  },
+
+  numbers: {
+    category: "Financial Clarity",
+    title: "Better decisions begin with better financial information.",
+    subtitle: "Moving beyond reports to understand what financial information is really telling you.",
+    read: "7 min read",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=85",
+    body: `
+      <p>Financial reports can contain a considerable amount of information. But having access to numbers does not automatically mean having a clear understanding of business performance.</p>
+
+      <h2>Information needs context.</h2>
+
+      <p>A revenue figure becomes more useful when viewed alongside margins, costs, cash flow and operational activity. A change in expenses may require a closer look at the underlying drivers rather than a simple comparison with the previous period.</p>
+
+      <p>Context helps turn individual figures into a more meaningful picture.</p>
+
+      <h2>Connect reporting with decision-making.</h2>
+
+      <p>Financial information should help leaders understand what is happening, why it may be happening and what questions need to be considered next.</p>
+
+      <div class="detail-quote">The purpose of financial information is not just to explain the past. It is to support better decisions ahead.</div>
+
+      <h2>Make the numbers work harder.</h2>
+
+      <p>Clear reporting structures, consistent definitions and useful performance measures can help make financial information easier to interpret and act upon.</p>
+
+      <p>When the information is connected to the decisions leaders need to make, reporting becomes a more valuable part of managing the business.</p>
+    `
+  },
+
+  decisions: {
+    category: "Leadership",
+    title: "The value of slowing down before making the next big decision.",
+    subtitle: "Why taking time to understand the situation can create better momentum later.",
+    read: "5 min read",
+    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=85",
+    body: `
+      <p>Business environments often reward speed. Leaders are expected to respond quickly, resolve challenges and keep moving. But moving quickly without understanding the situation can create avoidable complications.</p>
+
+      <h2>Separate urgency from importance.</h2>
+
+      <p>Not every visible problem requires an immediate structural change. Some challenges need investigation before action. Others may be symptoms of an underlying issue that has been present for some time.</p>
+
+      <p>Understanding the difference can help direct attention to what genuinely matters.</p>
+
+      <h2>Ask better questions first.</h2>
+
+      <p>What do we know? What are we assuming? Which areas are affected? What are the consequences of different options?</p>
+
+      <p>These questions create a stronger foundation for a decision and help make the reasoning behind it clearer to the people involved.</p>
+
+      <div class="detail-quote">A considered decision is not a delayed decision. It is a decision made with greater understanding.</div>
+
+      <h2>Build momentum that lasts.</h2>
+
+      <p>Taking the time to understand the situation can reduce unnecessary rework and help align people around a clearer direction.</p>
+    `
+  },
+
+  forecasting: {
+    category: "Treasury",
+    title: "From cash flow reporting to forward-looking planning.",
+    subtitle: "How a more connected view of cash flow can support stronger planning and preparedness.",
+    read: "6 min read",
+    image: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=1600&q=85",
+    body: `
+      <p>Historical cash flow reporting explains what has already happened. Forward-looking cash flow planning helps an organisation consider what may happen next.</p>
+
+      <h2>Understand the timing of cash movements.</h2>
+
+      <p>Receipts, payments, payroll, supplier commitments and investment plans all influence when cash is available and when it is required.</p>
+
+      <p>Bringing these movements together can help create a more complete view of future cash requirements.</p>
+
+      <h2>Make assumptions visible.</h2>
+
+      <p>Forecasts are built on assumptions. The value of a forecast improves when those assumptions are clear, regularly reviewed and connected to the latest available information.</p>
+
+      <div class="detail-quote">A useful cash flow forecast is not a promise of what will happen. It is a way to prepare for what could happen.</div>
+
+      <h2>Use planning to support decisions.</h2>
+
+      <p>A forward-looking view can help leaders consider funding needs, liquidity requirements, timing of investments and potential changes in business conditions.</p>
+
+      <p>It gives the organisation a better basis for discussing options before decisions become urgent.</p>
+    `
+  },
+
+  change: {
+    category: "Transformation",
+    title: "Transformation is not a destination. It is a way of working.",
+    subtitle: "Why lasting change depends on how new ways of working become part of everyday operations.",
+    read: "7 min read",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85",
+    body: `
+      <p>Transformation is often described through programmes, milestones and implementation dates. These are important, but completing a project does not necessarily mean that meaningful change has taken hold.</p>
+
+      <h2>Change needs to reach everyday work.</h2>
+
+      <p>New processes, systems and structures only create lasting value when people understand them and use them consistently.</p>
+
+      <p>That requires more than introducing something new. It requires attention to responsibilities, capabilities, communication and the way progress is sustained.</p>
+
+      <h2>Connect the design with the people using it.</h2>
+
+      <p>Transformation should consider how a proposed change affects the people, decisions and processes around it. When these connections are overlooked, even a well-designed solution can struggle to deliver its intended value.</p>
+
+      <div class="detail-quote">The real measure of transformation is not what gets implemented. It is what changes in the way the organisation works.</div>
+
+      <h2>Make progress sustainable.</h2>
+
+      <p>Clear ownership, useful measures and regular review help organisations understand whether new ways of working are delivering the intended results.</p>
+
+      <p>Transformation becomes more meaningful when it is treated as an ongoing organisational capability rather than a one-time event.</p>
+    `
+  }
+};
+
+/* LANDING / DETAIL NAVIGATION */
+
+const landingContent = document.getElementById("landingContent");
+const articleDetail = document.getElementById("articleDetail");
+const detailCategory = document.getElementById("detailCategory");
+const detailTitle = document.getElementById("detailTitle");
+const detailSubtitle = document.getElementById("detailSubtitle");
+const detailReadTime = document.getElementById("detailReadTime");
+const detailImage = document.getElementById("detailImage");
+const detailBody = document.getElementById("detailBody");
+const relatedGrid = document.getElementById("relatedGrid");
+
+function openArticle(id) {
+  const article = articles[id];
+  if (!article) return;
+
+  landingContent.classList.add("hidden");
+  articleDetail.classList.add("visible");
+
+  detailCategory.textContent = article.category;
+  detailTitle.textContent = article.title;
+  detailSubtitle.textContent = article.subtitle;
+  detailReadTime.textContent = article.read;
+  detailImage.src = article.image;
+  detailImage.alt = article.title;
+  detailBody.innerHTML = article.body;
+
+  relatedGrid.innerHTML = "";
+
+  Object.entries(articles)
+    .filter(([key]) => key !== id)
+    .slice(0, 3)
+    .forEach(([key, item]) => {
+      const card = document.createElement("article");
+      card.className = "article-card";
+
+      card.innerHTML = `
+        <a href="#article-${key}" class="card-image" data-article="${key}">
+          <img src="${item.image}" alt="${item.title}" loading="lazy">
+        </a>
+        <div class="card-category">${item.category}</div>
+        <h3>${item.title}</h3>
+        <p>${item.subtitle}</p>
+        <div class="card-bottom">
+          <span>${item.read}</span>
+          <a href="#article-${key}" data-article="${key}">↗</a>
+        </div>
+      `;
+
+      relatedGrid.appendChild(card);
+    });
+
+  history.pushState({article:id}, "", "#article-" + id);
+  window.scrollTo({top:0, behavior:"instant"});
+}
+
+function closeArticle(updateHistory = true) {
+  articleDetail.classList.remove("visible");
+  landingContent.classList.remove("hidden");
+
+  if (updateHistory && location.hash.startsWith("#article-")) {
+    history.pushState({}, "", location.pathname + location.search);
+  }
+
+  window.scrollTo({top:0, behavior:"instant"});
+}
+
+document.addEventListener("click", event => {
+  const link = event.target.closest("[data-article]");
+  if (!link) return;
+
+  event.preventDefault();
+  openArticle(link.dataset.article);
+});
+
+document.getElementById("backLink").addEventListener("click", event => {
+  event.preventDefault();
+  closeArticle();
+});
+
+window.addEventListener("popstate", () => {
+  const id = location.hash.replace("#article-", "");
+
+  if (articles[id]) {
+    const article = articles[id];
+    landingContent.classList.add("hidden");
+    articleDetail.classList.add("visible");
+    detailCategory.textContent = article.category;
+    detailTitle.textContent = article.title;
+    detailSubtitle.textContent = article.subtitle;
+    detailReadTime.textContent = article.read;
+    detailImage.src = article.image;
+    detailImage.alt = article.title;
+    detailBody.innerHTML = article.body;
+  } else {
+    closeArticle(false);
+  }
+});
+
+/* CATEGORY FILTER + SEARCH */
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const searchInput = document.getElementById("articleSearch");
+const articleCards = document.querySelectorAll("#articleGrid .article-card");
+const articleCount = document.getElementById("articleCount");
+const noResults = document.getElementById("noResults");
+
+let activeCategory = "all";
+
+function filterArticles() {
+  const searchTerm = searchInput.value.toLowerCase().trim();
+  let visibleCount = 0;
+
+  articleCards.forEach(card => {
+    const category = card.dataset.category;
+    const searchableText = (
+      card.dataset.search + " " +
+      card.innerText
+    ).toLowerCase();
+
+    const matchesCategory =
+      activeCategory === "all" || category === activeCategory;
+
+    const matchesSearch = searchableText.includes(searchTerm);
+    const visible = matchesCategory && matchesSearch;
+
+    card.hidden = !visible;
+    if (visible) visibleCount++;
+  });
+
+  articleCount.textContent = String(visibleCount).padStart(2, "0");
+  noResults.classList.toggle("visible", visibleCount === 0);
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach(item => item.classList.remove("active"));
+    button.classList.add("active");
+
+    activeCategory = button.dataset.category;
+    filterArticles();
+  });
+});
+
+searchInput.addEventListener("input", filterArticles);
+
+/* INITIAL ARTICLE ROUTE */
+
+const initialArticle = location.hash.replace("#article-", "");
+if (articles[initialArticle]) {
+  openArticle(initialArticle);
+  history.replaceState({article:initialArticle}, "", "#article-" + initialArticle);
+}
+</script>
+
+</body>
+</html>
