@@ -695,3 +695,211 @@ p { text-wrap: pretty; }
     content: none;
   }
 }
+
+/* =========================================================
+   ADDITIONS — visuals, image slots, motion
+   ========================================================= */
+
+/* ---------- image slots (replace src="" with your image) ---------- */
+
+.img-slot {
+  position: relative; overflow: hidden; margin: 0;
+  display: grid; place-items: center;
+  min-height: 220px;
+  border-radius: var(--radius-lg);
+  border: 1.5px dashed rgba(54,91,109,.38);
+  background:
+    repeating-linear-gradient(135deg, rgba(54,91,109,.055) 0 12px, transparent 12px 24px),
+    #E4EAE5;
+}
+.img-slot img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; z-index: 1; filter: saturate(.85);
+  transition: transform 1s var(--ease);
+}
+.img-slot img[src=""], .img-slot img:not([src]) { display: none; }
+.img-slot:has(img[src]:not([src=""])) { border-color: transparent; }
+.img-slot:hover img { transform: scale(1.04); }
+.slot-label {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 20px; text-align: center;
+  color: var(--primary);
+  font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+}
+.slot-label svg { width: 34px; height: 34px; opacity: .7; }
+.slot-label span { font-size: 12px; font-weight: 500; letter-spacing: .02em; text-transform: none; opacity: .75; max-width: 260px; }
+.img-slot.dark {
+  border-color: rgba(246,244,232,.28);
+  background:
+    repeating-linear-gradient(135deg, rgba(246,244,232,.04) 0 12px, transparent 12px 24px),
+    rgba(246,244,232,.05);
+}
+.img-slot.dark .slot-label { color: #D2DEDA; }
+
+/* ---------- hero: alignment card ---------- */
+
+.align-card {
+  position: absolute; z-index: 6;
+  top: 13%; right: -5%;
+  width: clamp(210px, 19vw, 250px);
+  padding: 16px 18px 16px;
+  background: rgba(255,255,255,.94);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  animation: floatNote 8s ease-in-out infinite; animation-delay: -3s;
+}
+.ac-head { display: flex; justify-content: space-between; align-items: center; }
+.ac-head small { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.ac-live { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.ac-live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #3E9B7A; box-shadow: 0 0 0 3px rgba(62,155,122,.18); }
+.align-card strong { display: block; margin-top: 6px; font: 700 18px/1.2 var(--serif); letter-spacing: -.02em; }
+.align-card svg { display: block; width: 100%; height: auto; margin: 12px 0 12px; }
+.ac-flow { stroke: #365B6D; stroke-width: 1.5; stroke-dasharray: 3 6; opacity: .6; animation: flow 1.6s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -18; } }
+.ac-rows { display: grid; gap: 7px; }
+.ac-row { display: flex; align-items: center; gap: 9px; color: var(--ink); font-size: 12px; font-weight: 600; }
+.ac-row i {
+  display: block; width: 16px; height: 16px; flex: none; border-radius: 50%;
+  background: var(--primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.3 2.3 4.7-5' fill='none' stroke='%23F6F4E8' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat;
+  animation: pop .5s var(--ease) both;
+}
+.ac-row:nth-child(1) i { animation-delay: 1s; }
+.ac-row:nth-child(2) i { animation-delay: 1.3s; }
+.ac-row:nth-child(3) i { animation-delay: 1.6s; }
+@keyframes pop { from { transform: scale(0); } }
+
+.note-two   { top: 52%; right: -6%; }
+.note-three { top: 72%; right: 10%; }
+
+/* ---------- marquee ---------- */
+
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: rgba(255,255,255,.4);
+  padding-block: 22px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track { display: flex; width: max-content; animation: marquee 40s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track span {
+  display: inline-flex; align-items: center; gap: 34px; padding-right: 34px;
+  font: 700 clamp(18px, 2vw, 26px)/1 var(--serif); letter-spacing: -.03em;
+  color: var(--ink); white-space: nowrap;
+}
+.marquee-track span:nth-child(even) { color: transparent; -webkit-text-stroke: 1px rgba(38,63,74,.45); }
+.marquee-track span::after { content: ""; width: 9px; height: 9px; background: var(--primary); transform: rotate(45deg); border-radius: 2px; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ---------- signal icons ---------- */
+
+.signal-side { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.signal-icon {
+  width: 46px; height: 46px; display: grid; place-items: center;
+  border-radius: 14px; background: rgba(54,91,109,.08); color: var(--primary);
+  transition: background .3s, color .3s, transform .4s var(--ease);
+}
+.signal-icon svg { width: 22px; height: 22px; }
+.signal:hover .signal-icon { background: var(--primary); color: var(--secondary); transform: rotate(-6deg); }
+
+/* ---------- drift diagram ---------- */
+
+.drift-viz {
+  margin-top: 40px; padding: 24px 24px 18px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid var(--line); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.drift-viz svg { display: block; width: 100%; height: auto; }
+.drift-viz text { font: 600 11px var(--sans); fill: var(--muted); letter-spacing: .04em; }
+.drift-viz p { margin-top: 8px; color: var(--muted); font-size: 13px; }
+.dv-path { stroke: #365B6D; stroke-width: 1.8; stroke-dasharray: 4 7; opacity: .5; animation: flow 1.8s linear infinite; }
+.dv-near { opacity: .85; }
+.dv-target { fill: none; stroke: rgba(54,91,109,.35); stroke-dasharray: 3 4; }
+
+/* ---------- process timeline track ---------- */
+
+.track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 18px; }
+.track-dot { position: relative; height: 14px; }
+.track-dot::before {
+  content: ""; position: absolute; left: 22px; top: 0; z-index: 2;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--paper); border: 2px solid var(--primary);
+  transition: background .3s; transition-delay: var(--td, 0s);
+}
+.track-dot::after {
+  content: ""; position: absolute; left: 36px; right: -36px; top: 6px; height: 2px;
+  background: var(--primary); transform: scaleX(0); transform-origin: left;
+  transition: transform .8s var(--ease); transition-delay: var(--td, 0s);
+}
+.track-dot:last-child::after { right: 0; background: linear-gradient(90deg, var(--primary), transparent); }
+.rail-wrap.visible .track-dot::after { transform: scaleX(1); }
+.rail-wrap.visible .track-dot::before { background: var(--primary); }
+
+/* ---------- feature image band ---------- */
+
+.feature { background: var(--mist); }
+.feature-grid { display: grid; grid-template-columns: 1.25fr .75fr; grid-template-rows: auto auto; gap: 18px; }
+.feature-grid .img-slot.big { grid-row: 1 / 3; min-height: 580px; }
+.feature-grid .img-slot.small { min-height: 260px; }
+.feature-card {
+  padding: clamp(28px, 3vw, 40px);
+  display: flex; flex-direction: column; justify-content: space-between; gap: 30px;
+  background: var(--third); color: var(--secondary);
+  border-radius: var(--radius-lg); position: relative; overflow: hidden;
+}
+.feature-card::after {
+  content: ""; position: absolute; width: 260px; height: 260px; right: -110px; bottom: -120px;
+  border: 1px solid rgba(246,244,232,.18); border-radius: 50%;
+  box-shadow: 0 0 0 30px rgba(246,244,232,.035), 0 0 0 60px rgba(246,244,232,.02);
+}
+.feature-card .eyebrow { color: #C3D1D0; }
+.weeks { display: flex; align-items: center; gap: 14px; margin-top: 22px; }
+.weeks strong { font: 800 clamp(48px, 5vw, 68px)/1 var(--serif); letter-spacing: -.05em; }
+.weeks span { color: rgba(246,244,232,.75); font-size: 13px; font-weight: 600; line-height: 1.35; letter-spacing: .02em; }
+.feature-card blockquote { font: 700 clamp(20px, 1.9vw, 26px)/1.25 var(--serif); letter-spacing: -.03em; position: relative; z-index: 1; }
+.feature-card blockquote em { color: #B9C9CD; font-style: normal; }
+
+/* ---------- target: image + roadmap connector ---------- */
+
+.target-slot { margin-top: 34px; aspect-ratio: 16 / 10; min-height: 0; border-radius: var(--radius); }
+.roadmap { position: relative; }
+.roadmap:not(:last-child) .roadmap-num { position: relative; }
+.roadmap:not(:last-child) .roadmap-num::after {
+  content: ""; position: absolute; left: 50%; top: 40px; width: 1px; height: calc(100% + 26px);
+  background: linear-gradient(rgba(246,244,232,.4), rgba(246,244,232,.08));
+}
+
+/* ---------- outcomes: small visuals ---------- */
+
+.outcome-card > .oc-viz { position: absolute; top: 24px; right: 24px; width: 130px; }
+.oc-viz svg { width: 100%; height: auto; display: block; }
+
+/* ---------- final cta image ---------- */
+
+.cta-side { display: flex; flex-direction: column; align-items: flex-end; gap: 22px; flex: none; }
+.cta-side .img-slot { width: 300px; min-height: 0; aspect-ratio: 4 / 3; border-radius: var(--radius); }
+
+/* ---------- responsive additions ---------- */
+
+@media (max-width: 1150px) {
+  .track { display: none; }
+  .align-card { right: -2%; }
+}
+@media (max-width: 1000px) {
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+  .feature-grid .img-slot.big { grid-column: 1 / 3; grid-row: auto; min-height: 380px; }
+}
+@media (max-width: 800px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .feature-grid .img-slot.big { grid-column: auto; min-height: 300px; }
+  .signal-side { flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
+  .cta-side { align-items: flex-start; }
+  .cta-side .img-slot { width: 100%; }
+  .outcome-card > .oc-viz { width: 110px; }
+}
+@media (max-width: 540px) {
+  .align-card { display: none; }
+  .outcome-card > .oc-viz { display: none; }
+}

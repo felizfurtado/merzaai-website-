@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="styles/transformation.css">
+
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 
   <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-        <nav class="nav" id="mainNav">
+  <nav class="nav" id="mainNav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="what-we-solve.html">What We Solve</a>
@@ -33,14 +34,13 @@
     <a href="the-merzaai-method.html">The Merzaai Method</a>
     <a href="insights.html">Insights</a>
     <a href="contact.html" class="nav-cta">Let's Talk ↗</a>
-</nav>
+  </nav>
 </header>
 
 <main>
 
   <!-- HERO -->
   <section class="hero">
-
     <div class="hero-text reveal">
       <div class="hero-kicker"><span class="kicker-dot"></span>Treasury Transformation</div>
 
@@ -59,7 +59,6 @@
         <a class="primary-button" href="contact.html">
           Discuss your treasury <span>↗</span>
         </a>
-
         <a class="hero-secondary" href="#approach">
           Explore our approach ↓
         </a>
@@ -67,7 +66,6 @@
     </div>
 
     <div class="hero-visual reveal" aria-label="Abstract visual representing treasury brought into a single connected view">
-
       <div class="hero-disc"></div>
 
       <figure class="hero-photo">
@@ -86,6 +84,8 @@
         <div class="visual-label visual-caption">From fragmented to connected</div>
       </figure>
 
+     
+
       <div class="float-note note-one">Fragmented banking</div>
       <div class="float-note note-two">Disconnected data</div>
       <div class="float-note note-three">Manual processes</div>
@@ -95,8 +95,15 @@
       <span>See the cash. Understand the position. Act with confidence.</span>
       <span>Treasury advisory / Merzaai</span>
     </div>
-
   </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Cash visibility</span><span>Cash flow forecasting</span><span>Liquidity</span><span>FX &amp; risk</span><span>Working capital</span><span>Bank connectivity</span><span>Treasury operating model</span><span>Controls &amp; governance</span>
+      <span>Cash visibility</span><span>Cash flow forecasting</span><span>Liquidity</span><span>FX &amp; risk</span><span>Working capital</span><span>Bank connectivity</span><span>Treasury operating model</span><span>Controls &amp; governance</span>
+    </div>
+  </div>
 
   <!-- STATEMENT + PHOTOS -->
   <section class="story" aria-label="Treasury transformation in practice">
@@ -126,7 +133,7 @@
         <figure class="photo-card reveal">
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=85" alt="Financial planning documents on a desk" loading="lazy">
           <figcaption class="photo-caption">
-            <small>03 / strategy</small>
+            <small>03 / Strategy</small>
             <strong>Make decisions with a clearer view ahead.</strong>
           </figcaption>
         </figure>
@@ -151,7 +158,10 @@
 
       <div class="signal-grid">
         <article class="signal reveal">
-          <div class="signal-no">01</div>
+          <div class="signal-top">
+            <div class="signal-no">01</div>
+            <div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18M16 15h2"/></svg></div>
+          </div>
           <h3>Cash is spread across the organisation.</h3>
           <div>
             <span class="signal-tag">What you may be seeing</span>
@@ -160,7 +170,10 @@
         </article>
 
         <article class="signal reveal">
-          <div class="signal-no">02</div>
+          <div class="signal-top">
+            <div class="signal-no">02</div>
+            <div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-8"/><path d="M15 7h5v5"/></svg></div>
+          </div>
           <h3>Forecasts struggle to keep pace.</h3>
           <div>
             <span class="signal-tag">What you may be seeing</span>
@@ -169,7 +182,10 @@
         </article>
 
         <article class="signal reveal">
-          <div class="signal-no">03</div>
+          <div class="signal-top">
+            <div class="signal-no">03</div>
+            <div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          </div>
           <h3>Liquidity is managed reactively.</h3>
           <div>
             <span class="signal-tag">What you may be seeing</span>
@@ -178,7 +194,10 @@
         </article>
 
         <article class="signal reveal">
-          <div class="signal-no">04</div>
+          <div class="signal-top">
+            <div class="signal-no">04</div>
+            <div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18"/></svg></div>
+          </div>
           <h3>Banking operations are fragmented.</h3>
           <div>
             <span class="signal-tag">What you may be seeing</span>
@@ -189,8 +208,73 @@
     </div>
   </section>
 
+  <!-- THE SHIFT -->
+  <section class="shift">
+    <div class="container">
+      <div class="shift-head reveal">
+        <div>
+          <div class="eyebrow">The shift</div>
+          <h2 class="h2">From scattered information to <em>one treasury view.</em></h2>
+        </div>
+        <p class="lead">
+          The same banks, systems and people, connected around a
+          single picture of cash, so the position is understood
+          rather than assembled.
+        </p>
+      </div>
+
+      <div class="shift-board reveal">
+        <div class="shift-pane before">
+          <span class="shift-tag">Today</span>
+          <svg viewBox="0 0 460 380" role="img" aria-label="Disconnected banks, ERP, spreadsheets and email with broken links between them">
+            <path class="broken" d="M95 70 L285 175"/>
+            <path class="broken" d="M70 195 L130 315"/>
+            <path class="broken" d="M285 175 L355 300"/>
+            <path class="broken" d="M350 55 L285 175"/>
+            <g class="break-mark"><circle cx="190" cy="122" r="9"/><path d="M186 118l8 8M194 118l-8 8"/></g>
+            <g class="break-mark"><circle cx="100" cy="255" r="9"/><path d="M96 251l8 8M104 251l-8 8"/></g>
+            <g class="break-mark"><circle cx="320" cy="237" r="9"/><path d="M316 233l8 8M324 233l-8 8"/></g>
+            <g class="node"><rect x="50" y="53" width="90" height="34" rx="17"/><text x="95" y="70">Bank A</text></g>
+            <g class="node"><rect x="305" y="38" width="90" height="34" rx="17"/><text x="350" y="55">Bank B</text></g>
+            <g class="node"><rect x="35" y="178" width="70" height="34" rx="17"/><text x="70" y="195">ERP</text></g>
+            <g class="node"><rect x="220" y="158" width="130" height="34" rx="17"/><text x="285" y="175">Spreadsheets</text></g>
+            <g class="node"><rect x="62" y="298" width="136" height="34" rx="17"/><text x="130" y="315">Email threads</text></g>
+            <g class="node"><rect x="295" y="283" width="120" height="34" rx="17"/><text x="355" y="300">Bank portal</text></g>
+          </svg>
+          <p>Information lives in silos. Each update is gathered by hand, and the picture is out of date by the time it is complete.</p>
+        </div>
+
+        <div class="shift-arrow" aria-hidden="true"><span>→</span></div>
+
+        <div class="shift-pane after">
+          <span class="shift-tag">Connected</span>
+          <svg viewBox="0 0 460 380" role="img" aria-label="Banks, ERP, forecasting, reporting and payments connected to one central treasury view">
+            <path class="flow" d="M85 65 L230 190"/>
+            <path class="flow" d="M375 65 L230 190"/>
+            <path class="flow" d="M55 195 L230 190"/>
+            <path class="flow" d="M400 195 L230 190"/>
+            <path class="flow" d="M105 320 L230 190"/>
+            <path class="flow" d="M355 320 L230 190"/>
+            <circle class="hub-ring" cx="230" cy="190" r="64" stroke-width="1.5"/>
+            <circle class="hub-core" cx="230" cy="190" r="58"/>
+            <circle cx="230" cy="190" r="48" fill="none" stroke="rgba(246,244,232,.3)"/>
+            <text class="hub-text" x="230" y="186">One treasury</text>
+            <text class="hub-text" x="230" y="205">view</text>
+            <g class="node"><rect x="40" y="48" width="90" height="34" rx="17"/><text x="85" y="65">Bank A</text></g>
+            <g class="node"><rect x="330" y="48" width="90" height="34" rx="17"/><text x="375" y="65">Bank B</text></g>
+            <g class="node"><rect x="20" y="178" width="70" height="34" rx="17"/><text x="55" y="195">ERP</text></g>
+            <g class="node"><rect x="350" y="178" width="100" height="34" rx="17"/><text x="400" y="195">Forecast</text></g>
+            <g class="node"><rect x="50" y="303" width="110" height="34" rx="17"/><text x="105" y="320">Reporting</text></g>
+            <g class="node"><rect x="300" y="303" width="110" height="34" rx="17"/><text x="355" y="320">Payments</text></g>
+          </svg>
+          <p>Data flows into a shared view. Leadership sees available cash, upcoming needs and risks together, when it matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CORE TREASURY AREAS -->
-  <section class="pillars section-padding">
+  <section class="pillars" style="padding-block: clamp(56px, 6vw, 90px);">
     <div class="container">
 
       <div class="pillars-intro reveal">
@@ -206,18 +290,77 @@
 
       <div class="console reveal">
         <div class="tabs" role="tablist" aria-label="Core treasury areas">
-          <button class="tab" role="tab" aria-selected="false" aria-controls="pillar-panel" data-desc="Connect operational drivers and financial assumptions to a forward-looking cash view."><span>01</span>Cash flow forecasting<i>→</i></button>
+          <button class="tab" role="tab" aria-selected="true" aria-controls="pillar-panel" data-desc="Connect operational drivers and financial assumptions to a forward-looking cash view."><span>01</span>Cash flow forecasting<i>→</i></button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="pillar-panel" data-desc="Understand funding needs, cash availability and surplus positions with greater confidence."><span>02</span>Liquidity management<i>→</i></button>
-          <button class="tab" role="tab" aria-selected="true" aria-controls="pillar-panel" data-desc="Identify potential financial risks early and take the right steps to protect the organisation."><span>03</span>FX and financial risk management<i>→</i></button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="pillar-panel" data-desc="Identify potential financial risks early and take the right steps to protect the organisation."><span>03</span>FX and financial risk management<i>→</i></button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="pillar-panel" data-desc="Understand how receivables, payables and inventory influence cash conversion."><span>04</span>Working capital<i>→</i></button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="pillar-panel" data-desc="Bring structure to bank relationships, payment processes, reporting and controls."><span>05</span>Banking and treasury operations<i>→</i></button>
         </div>
+
         <div class="panel" id="pillar-panel" role="tabpanel" aria-live="polite">
           <span class="p-num"></span>
+
+          <div class="p-viz" aria-hidden="true">
+            <svg viewBox="0 0 280 170" fill="none">
+              <path d="M10 40H270M10 85H270M10 130H270" stroke="rgba(246,244,232,.1)"/>
+              <path d="M150 80 C190 64 230 62 270 44 L270 104 C230 102 190 100 150 84Z" fill="rgba(246,244,232,.12)"/>
+              <path d="M10 122 C40 112 62 132 90 104 S130 86 150 82" stroke="#F6F4E8" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M150 82 C190 82 230 82 270 74" stroke="#F6F4E8" stroke-width="2" stroke-dasharray="5 6"/>
+              <path d="M150 28V146" stroke="rgba(246,244,232,.3)" stroke-dasharray="2 4"/>
+              <circle cx="150" cy="82" r="5" fill="#F6F4E8"/>
+              <text x="10" y="164">Actual</text><text x="160" y="164">Forecast</text>
+            </svg>
+
+            <svg viewBox="0 0 280 170" fill="none">
+              <g fill="rgba(246,244,232,.22)">
+                <rect x="14" y="80" width="22" height="60" rx="4"/>
+                <rect x="52" y="62" width="22" height="78" rx="4"/>
+                <rect x="90" y="92" width="22" height="48" rx="4"/>
+                <rect x="128" y="48" width="22" height="92" rx="4"/>
+                <rect x="166" y="70" width="22" height="70" rx="4"/>
+              </g>
+              <rect x="204" y="36" width="22" height="104" rx="4" fill="rgba(246,244,232,.65)"/>
+              <rect x="242" y="54" width="22" height="86" rx="4" fill="rgba(246,244,232,.65)"/>
+              <path d="M8 96H272" stroke="#F6F4E8" stroke-dasharray="5 5"/>
+              <path d="M8 140H272" stroke="rgba(246,244,232,.3)"/>
+              <text x="10" y="164">Cash available</text><text x="214" y="164">Next</text>
+              <text x="10" y="88">Buffer</text>
+            </svg>
+
+            <svg viewBox="0 0 280 170" fill="none">
+              <rect x="10" y="56" width="260" height="62" rx="8" fill="rgba(246,244,232,.08)"/>
+              <path d="M10 90 C30 36 50 146 70 80 S110 26 130 102 S170 152 190 70 S230 36 270 96" stroke="rgba(246,244,232,.38)" stroke-width="1.6"/>
+              <path d="M10 88 C70 76 130 98 190 82 S250 80 270 86" stroke="#F6F4E8" stroke-width="2.5" stroke-linecap="round"/>
+              <text x="10" y="46">Managed range</text><text x="10" y="164">Exposure over time</text>
+            </svg>
+
+            <svg viewBox="0 0 280 170" fill="none">
+              <circle cx="140" cy="85" r="58" stroke="rgba(246,244,232,.35)" stroke-width="1.5" stroke-dasharray="3 5"/>
+              <circle cx="140" cy="27" r="6" fill="#F6F4E8"/>
+              <circle cx="190" cy="114" r="6" fill="#F6F4E8"/>
+              <circle cx="90" cy="114" r="6" fill="#F6F4E8"/>
+              <circle r="4" fill="#B9C9CD"><animateMotion dur="6s" repeatCount="indefinite" path="M140 27 A58 58 0 1 1 139.9 27"/></circle>
+              <text x="140" y="12" text-anchor="middle">Receivables</text>
+              <text x="204" y="140">Inventory</text>
+              <text x="76" y="140" text-anchor="end">Payables</text>
+              <text x="140" y="90" text-anchor="middle">Cash</text>
+            </svg>
+
+            <svg viewBox="0 0 280 170" fill="none">
+              <path class="flow" style="stroke:#F6F4E8" d="M40 30 L140 85M240 30 L140 85M40 140 L140 85M240 140 L140 85"/>
+              <circle cx="40" cy="30" r="12" fill="rgba(246,244,232,.18)" stroke="#F6F4E8"/>
+              <circle cx="240" cy="30" r="12" fill="rgba(246,244,232,.18)" stroke="#F6F4E8"/>
+              <circle cx="40" cy="140" r="12" fill="rgba(246,244,232,.18)" stroke="#F6F4E8"/>
+              <circle cx="240" cy="140" r="12" fill="rgba(246,244,232,.18)" stroke="#F6F4E8"/>
+              <rect x="104" y="64" width="72" height="42" rx="10" fill="#F6F4E8"/>
+              <text x="140" y="89" text-anchor="middle" style="fill:#263F4A">Treasury</text>
+              <text x="40" y="164" text-anchor="middle">Bank</text><text x="240" y="164" text-anchor="middle">Bank</text>
+            </svg>
+          </div>
+
           <div class="p-body"><h3></h3><p></p><div class="chips"></div></div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -238,32 +381,98 @@
         </p>
       </div>
 
-      <div class="rail reveal">
-        <div class="step">
-          <small>01 / FRAME</small>
-          <h3>Understand the position</h3>
-          <p>Review the treasury environment, cash structure, processes and constraints.</p>
+      <div class="rail-wrap reveal">
+        <div class="track" aria-hidden="true">
+          <div class="track-dot" style="--td:.1s"></div>
+          <div class="track-dot" style="--td:.4s"></div>
+          <div class="track-dot" style="--td:.7s"></div>
+          <div class="track-dot" style="--td:1s"></div>
+          <div class="track-dot" style="--td:1.3s"></div>
         </div>
-        <div class="step">
-          <small>02 / DISTILL</small>
-          <h3>Identify what matters</h3>
-          <p>Separate critical gaps from operational noise and identify improvement priorities.</p>
+
+        <div class="rail">
+          <div class="step">
+            <div class="step-top">
+              <small>01 / FRAME</small>
+              <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
+            </div>
+            <h3>Understand the position</h3>
+            <p>Review the treasury environment, cash structure, processes and constraints.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-top">
+              <small>02 / DISTILL</small>
+              <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16l-6 8v6l-4-2v-4z"/></svg></div>
+            </div>
+            <h3>Identify what matters</h3>
+            <p>Separate critical gaps from operational noise and identify improvement priorities.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-top">
+              <small>03 / RESOLVE</small>
+              <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"/></svg></div>
+            </div>
+            <h3>Set the direction</h3>
+            <p>Make decisions about liquidity, controls, processes and the future operating model.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-top">
+              <small>04 / DESIGN</small>
+              <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 8l3.3 7.6M16.5 8l-3.3 7.6M8.5 6h7"/></svg></div>
+            </div>
+            <h3>Connect the function</h3>
+            <p>Shape the processes, information flows, technology and governance required.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-top">
+              <small>05 / COMMIT</small>
+              <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></div>
+            </div>
+            <h3>Make it actionable</h3>
+            <p>Translate the design into priorities, ownership and a sequenced roadmap.</p>
+          </div>
         </div>
-        <div class="step">
-          <small>03 / RESOLVE</small>
-          <h3>Set the direction</h3>
-          <p>Make decisions about liquidity, controls, processes and the future operating model.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE -->
+  <section class="feature section-padding">
+    <div class="container">
+      <div class="feature-grid">
+
+        <figure class="img-slot big reveal">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=85" alt="Finance and treasury team reviewing the cash position together">
+          <div class="slot-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
+            Image space 01
+            <span>Portrait / tall · 1200 × 1500 · Team working session, leadership discussion</span>
+          </div>
+        </figure>
+
+        <div class="feature-card reveal">
+          <div class="eyebrow">Treasury in practice</div>
+          <blockquote>Transformation happens with people, <em>not just systems.</em></blockquote>
+          <p>
+            We work alongside finance and treasury teams to understand
+            how decisions are really made, then shape a function that
+            fits the way the business operates.
+          </p>
         </div>
-        <div class="step">
-          <small>04 / DESIGN</small>
-          <h3>Connect the function</h3>
-          <p>Shape the processes, information flows, technology and governance required.</p>
-        </div>
-        <div class="step">
-          <small>05 / COMMIT</small>
-          <h3>Make it actionable</h3>
-          <p>Translate the design into priorities, ownership and a sequenced roadmap.</p>
-        </div>
+
+        <figure class="img-slot small reveal">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2100&q=85" alt="Close-up of treasury reporting or a workshop session">
+          <div class="slot-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
+            Image space 02
+            <span>Landscape · 1200 × 800 · Workshop detail, whiteboard or reporting close-up</span>
+          </div>
+        </figure>
+
       </div>
     </div>
   </section>
@@ -286,21 +495,45 @@
         </p>
       </div>
 
+      <figure class="img-slot dark tech-showcase reveal">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85" alt="Treasury dashboard showing consolidated cash and forecast">
+        <div class="slot-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
+          Image space 03
+          <span>Wide · 2100 × 800 · Dashboard screenshot, system map or operations floor</span>
+        </div>
+      </figure>
+
       <div class="tech-grid reveal">
         <div class="tech-item">
-          <div class="tech-num">1</div>
+          <div class="tech-head">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6M10 6l1-1a4 4 0 016 6l-1 1M14 18l-1 1a4 4 0 01-6-6l1-1"/></svg></div>
+            <div class="tech-num">01</div>
+          </div>
           <div><strong>Bank connectivity</strong><p>Improve how bank information and account data flow into the organisation.</p></div>
         </div>
+
         <div class="tech-item">
-          <div class="tech-num">2</div>
+          <div class="tech-head">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20V11M12 20V5M18 20v-6M3 20h18"/></svg></div>
+            <div class="tech-num">02</div>
+          </div>
           <div><strong>Data and reporting</strong><p>Create more consistent information for cash positions, forecasts and decisions.</p></div>
         </div>
+
         <div class="tech-item">
-          <div class="tech-num">3</div>
+          <div class="tech-head">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 00-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0014.5 4.5L20 16M20 20v-4h-4"/></svg></div>
+            <div class="tech-num">03</div>
+          </div>
           <div><strong>Process automation</strong><p>Identify repetitive manual work that can be simplified or automated.</p></div>
         </div>
+
         <div class="tech-item">
-          <div class="tech-num">4</div>
+          <div class="tech-head">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div class="tech-num">04</div>
+          </div>
           <div><strong>Controls and governance</strong><p>Clarify responsibilities, approvals and oversight across treasury activities.</p></div>
         </div>
       </div>
@@ -312,7 +545,8 @@
     <div class="container">
 
       <div class="out-head reveal">
-        <h2 class="h2">A treasury function built for <em>better decisions.</em></h2>
+        <div class="eyebrow">Outcomes</div>
+        <h2 class="h2" style="margin-top:26px">A treasury function built for <em>better decisions.</em></h2>
         <p class="lead">
           The goal is more than process improvement. It is a treasury
           function that gives the business a stronger understanding
@@ -323,20 +557,49 @@
       <div class="outcome-grid">
         <article class="outcome-card reveal">
           <small>01 / VISIBILITY</small>
+
+          <figure class="img-slot dark">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85" alt="Leadership reviewing a consolidated cash view">
+            <div class="slot-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
+              Image space 04
+              <span>Landscape · 1200 × 600 · Cash view on screen or boardroom moment</span>
+            </div>
+          </figure>
+
           <div>
             <strong>A clearer view of cash</strong>
             <p>Understand cash positions across accounts, entities and currencies.</p>
+            <div class="ccy" aria-hidden="true"><span>AED</span><span>USD</span><span>GBP</span><span>EUR</span><span>INR</span></div>
           </div>
         </article>
+
         <article class="outcome-card reveal">
           <small>02 / CONTROL</small>
+          <div class="oc-viz" aria-hidden="true">
+            <svg viewBox="0 0 140 80" fill="none">
+              <path d="M14 70 A56 56 0 0 1 126 70" stroke="rgba(54,91,109,.18)" stroke-width="10" stroke-linecap="round"/>
+              <path d="M14 70 A56 56 0 0 1 126 70" stroke="#365B6D" stroke-width="10" stroke-linecap="round" stroke-dasharray="176" stroke-dashoffset="48"/>
+              <circle cx="70" cy="70" r="5" fill="#263F4A"/>
+              <path d="M70 70 L104 36" stroke="#263F4A" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div>
             <strong>More confident liquidity decisions</strong>
             <p>Connect cash needs, available funds and upcoming obligations.</p>
           </div>
         </article>
+
         <article class="outcome-card reveal">
           <small>03 / FORESIGHT</small>
+          <div class="oc-viz" aria-hidden="true">
+            <svg viewBox="0 0 140 80" fill="none">
+              <path d="M70 40 C95 28 115 22 134 10 L134 46 C115 46 95 46 70 44Z" fill="rgba(54,91,109,.14)"/>
+              <path d="M6 66 C22 60 34 66 46 52 S62 42 70 42" stroke="#263F4A" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M70 42 C95 36 115 32 134 26" stroke="#365B6D" stroke-width="2" stroke-dasharray="4 5"/>
+              <circle cx="70" cy="42" r="4.5" fill="#365B6D"/>
+            </svg>
+          </div>
           <div>
             <strong>A forward-looking treasury</strong>
             <p>Use better forecasts and connected information to anticipate what is ahead.</p>
@@ -358,7 +621,18 @@
           what needs to change and where to begin.
         </p>
       </div>
-      <a class="cta-button" href="contact.html">Discuss your treasury <span>↗</span></a>
+
+      <div class="cta-side">
+        <figure class="img-slot dark">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Merzaai advisor in conversation with a client">
+          <div class="slot-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
+            Image space 05
+            <span>800 × 600 · Advisor portrait or client conversation</span>
+          </div>
+        </figure>
+        <a class="cta-button" href="contact.html">Discuss your treasury <span>↗</span></a>
+      </div>
     </div>
   </section>
 
@@ -377,7 +651,7 @@
       <a href="what-we-solve.html">What We Solve</a>
       <a href="transformation-clarity.html">Clarity</a>
       <a href="treasury-transformation.html">Treasury Transformation</a>
-      <a href="method.html">The Merzaai Method</a>
+      <a href="the-merzaai-method.html">The Merzaai Method</a>
       <a href="insights.html">Insights</a>
     </div>
 
@@ -410,7 +684,14 @@
     bar.style.transform=`scaleX(${max>0?Math.min(1,y/max):0})`;
     ticking=false;
   };
-  window.addEventListener("scroll",()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+
+  window.addEventListener("scroll",()=>{
+    if(!ticking){
+      requestAnimationFrame(update);
+      ticking=true;
+    }
+  },{passive:true});
+
   update();
 
   toggle.addEventListener("click",()=>{
@@ -418,6 +699,7 @@
     toggle.setAttribute("aria-expanded",String(open));
     toggle.textContent=open?"×":"☰";
   });
+
   nav.querySelectorAll("a").forEach(a=>{
     a.addEventListener("click",()=>{
       nav.classList.remove("open");
@@ -426,34 +708,66 @@
     });
   });
 
+  /* pillars console */
   const tabs=[...document.querySelectorAll(".tab")];
-  const pnum=document.querySelector(".p-num"),pbody=document.querySelector(".p-body");
+  const vizzes=[...document.querySelectorAll(".p-viz svg")];
+  const pnum=document.querySelector(".p-num");
+  const pbody=document.querySelector(".p-body");
+
   const setTab=t=>{
+    const i=tabs.indexOf(t);
     tabs.forEach(b=>b.setAttribute("aria-selected",String(b===t)));
+    vizzes.forEach((v,k)=>v.classList.toggle("on",k===i));
+
     const name=t.childNodes[1].textContent;
     pnum.textContent=t.querySelector("span").textContent;
     pbody.querySelector("h3").textContent=name;
     pbody.querySelector("p").textContent=t.dataset.desc;
-    pbody.querySelector(".chips").innerHTML="<small>Connects with</small>"+tabs.filter(b=>b!==t).map(b=>"<em>"+b.childNodes[1].textContent+"</em>").join("");
-    pbody.style.animation="none";pbody.offsetHeight;pbody.style.animation="";
+
+    pbody.querySelector(".chips").innerHTML=
+      "<small>Connects with</small>"+
+      tabs.filter(b=>b!==t)
+      .map(b=>"<em>"+b.childNodes[1].textContent+"</em>")
+      .join("");
+
+    pbody.style.animation="none";
+    pbody.offsetHeight;
+    pbody.style.animation="";
   };
-  tabs.forEach(b=>{b.addEventListener("click",()=>setTab(b));b.addEventListener("mouseenter",()=>{if(matchMedia("(hover:hover) and (min-width:701px)").matches)setTab(b)})});
+
+  tabs.forEach(b=>{
+    b.addEventListener("click",()=>setTab(b));
+    b.addEventListener("mouseenter",()=>{
+      if(matchMedia("(hover:hover) and (min-width:701px)").matches){
+        setTab(b);
+      }
+    });
+  });
+
   setTab(tabs[0]);
 
+  /* reveal */
   const items=document.querySelectorAll(".reveal");
+
   if(!("IntersectionObserver" in window)||window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     items.forEach(el=>el.classList.add("visible"));
     return;
   }
+
   items.forEach(el=>{
     const sibs=[...el.parentElement.children].filter(c=>c.classList.contains("reveal"));
     el.style.setProperty("--d",`${Math.min(sibs.indexOf(el),5)*0.08}s`);
   });
+
   const io=new IntersectionObserver(entries=>{
     entries.forEach(e=>{
-      if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}
+      if(e.isIntersecting){
+        e.target.classList.add("visible");
+        io.unobserve(e.target);
+      }
     });
   },{threshold:.12,rootMargin:"0px 0px -5% 0px"});
+
   items.forEach(el=>io.observe(el));
 })();
 </script>

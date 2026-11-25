@@ -12,11 +12,14 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/merzaai-method.css">
 
+
+
 </head>
 
 
 
 <body>
+<!-- IMAGE SLOTS: put your path in each <img src="">; the dashed placeholder hides once set. -->
 
 <div class="progress" id="progress"></div>
 
@@ -89,6 +92,8 @@
   </div>
 </section>
 
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Context</span><span>Problem definition</span><span>Root causes</span><span>Insights</span><span>Priorities</span><span>Direction</span><span>Roadmap</span><span>Operating model</span><span>Ownership</span><span>Momentum</span><span>Context</span><span>Problem definition</span><span>Root causes</span><span>Insights</span><span>Priorities</span><span>Direction</span><span>Roadmap</span><span>Operating model</span><span>Ownership</span><span>Momentum</span></div></div>
+
 <!-- STATEMENT -->
 <section class="statement">
   <div class="container">
@@ -147,12 +152,14 @@
       </p>
     </div>
 
+    <div class="flow-track" aria-hidden="true"><div style="--td:.1s"></div><div style="--td:.4s"></div><div style="--td:.7s"></div><div style="--td:1s"></div><div style="--td:1.3s"></div></div>
+
     <div class="overview-flow">
 
       <a class="overview-step" href="#frame">
         <div class="overview-step-top">
           <span class="overview-step-number">01 / 05</span>
-          <span class="overview-symbol">F</span>
+          <span class="overview-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span>
         </div>
         <div>
           <h3>FRAME</h3>
@@ -164,7 +171,7 @@
       <a class="overview-step" href="#distill">
         <div class="overview-step-top">
           <span class="overview-step-number">02 / 05</span>
-          <span class="overview-symbol">D</span>
+          <span class="overview-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16l-6 8v6l-4-2v-4z"/></svg></span>
         </div>
         <div>
           <h3>DISTILL</h3>
@@ -176,7 +183,7 @@
       <a class="overview-step" href="#resolve">
         <div class="overview-step-top">
           <span class="overview-step-number">03 / 05</span>
-          <span class="overview-symbol">R</span>
+          <span class="overview-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"/></svg></span>
         </div>
         <div>
           <h3>RESOLVE</h3>
@@ -188,7 +195,7 @@
       <a class="overview-step" href="#design">
         <div class="overview-step-top">
           <span class="overview-step-number">04 / 05</span>
-          <span class="overview-symbol">D</span>
+          <span class="overview-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 8l3.3 7.6M16.5 8l-3.3 7.6M8.5 6h7"/></svg></span>
         </div>
         <div>
           <h3>DESIGN</h3>
@@ -200,7 +207,7 @@
       <a class="overview-step" href="#commit">
         <div class="overview-step-top">
           <span class="overview-step-number">05 / 05</span>
-          <span class="overview-symbol">C</span>
+          <span class="overview-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
         </div>
         <div>
           <h3>COMMIT</h3>
@@ -437,6 +444,22 @@
       <p class="deliverables-copy">
         The output is not simply a report or a recommendation. It is a clearer understanding of the situation, a considered direction and a practical basis for moving forward.
       </p>
+      <figure class="img-slot deliver-slot">
+  <img
+    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=85"
+    alt="Strategic planning documents and business analysis during a workshop"
+    loading="lazy"
+  >
+  <div class="slot-label">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="3" y="4" width="18" height="16" rx="3"/>
+      <circle cx="9" cy="10" r="2"/>
+      <path d="M21 16l-5-5-9 9"/>
+    </svg>
+    Image space 01
+    <span>Landscape · 1200 × 750 · Roadmap, decision document or workshop output</span>
+  </div>
+</figure>
     </div>
 
     <div class="sheet">
@@ -469,9 +492,27 @@
       </p>
     </div>
 
-    <a href="contact.html" class="light-button">
-      Start a conversation <span>↗</span>
-    </a>
+    <div class="cta-side">
+      <figure class="img-slot dark">
+  <img
+    src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+    alt="Merzaai advisor in conversation with a client"
+    loading="lazy"
+  >
+  <div class="slot-label">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="3" y="4" width="18" height="16" rx="3"/>
+      <circle cx="9" cy="10" r="2"/>
+      <path d="M21 16l-5-5-9 9"/>
+    </svg>
+    Image space 02
+    <span>800 × 600 · Advisor portrait or client conversation</span>
+  </div>
+</figure>
+      <a href="contact.html" class="light-button">
+        Start a conversation <span>↗</span>
+      </a>
+    </div>
 
   </div>
 </section>
@@ -555,7 +596,7 @@ nav.querySelectorAll("a").forEach(link => {
 
 /* REVEAL ON SCROLL (staggered within each group) */
 (() => {
-  const selector = ".overview-step, .stages-head, .overview-heading, .intro-lead, .intro-side, .intro-note, .connection-layout > *, .stair, .engagement-visual, .engagement-copy > *:not(.engagement-list), .engagement-item, .deliverables-grid > *";
+  const selector = ".flow-track, .overview-step, .stages-head, .overview-heading, .intro-lead, .intro-side, .intro-note, .connection-layout > *, .stair, .engagement-visual, .engagement-copy > *:not(.engagement-list), .engagement-item, .deliverables-grid > *";
 
   if (!("IntersectionObserver" in window)) return;
 
@@ -577,5 +618,611 @@ nav.querySelectorAll("a").forEach(link => {
 })();
 </script>
 
+<!-- MERZAAI METHOD ANIMATIONS -->
+
+<script>
+/* 01 Frame   – balls drop into a box and settle neatly
+   02 Distill – balls pass through a refined funnel, only the signal comes out
+   03 Resolve – balls line up in a row
+   04 Design  – the row folds into an "M" pattern
+   05 Commit  – follow the roadmap to the end and plant a flag */
+
+(() => {
+  const steps = document.querySelectorAll(".overview-step");
+  if (!steps.length) return;
+
+  const NS = "http://www.w3.org/2000/svg";
+
+  const el = (tag, attrs = {}, parent) => {
+    const n = document.createElementNS(NS, tag);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(n);
+    return n;
+  };
+
+  const clamp = x => Math.min(1, Math.max(0, x));
+  const lerp = (a, b, u) => a + (b - a) * u;
+
+  const ease = u =>
+    (u < .5
+      ? 4 * u * u * u
+      : 1 - Math.pow(-2 * u + 2, 3) / 2);
+
+  const bounce = x => {
+    const n = 7.5625, d = 2.75;
+
+    if (x < 1 / d) return n * x * x;
+    if (x < 2 / d) return n * (x -= 1.5 / d) * x + .75;
+    if (x < 2.5 / d) return n * (x -= 2.25 / d) * x + .9375;
+
+    return n * (x -= 2.625 / d) * x + .984375;
+  };
+
+  const N = 9, R = 6;
+
+  const MESSY = [
+    [55,40],[85,35],[120,46],
+    [150,38],[70,68],[105,74],
+    [140,70],[58,90],[128,91]
+  ];
+
+  const ROW = Array.from(
+    { length: N },
+    (_, i) => [20 + i * 20, 60]
+  );
+
+  const MPAT = [
+    [60,96],[60,61],[60,26],
+    [80,46],[100,66],[120,46],
+    [140,26],[140,61],[140,96]
+  ];
+
+  const makeBalls = (g, cls) =>
+    Array.from(
+      { length: N },
+      (_, i) => el(
+        "circle",
+        { r: R, class: "mm-ball " + (cls ? cls(i) : "") },
+        g
+      )
+    );
+
+  const setB = (b, x, y, o = 1, s = 1) => {
+    b.setAttribute("cx", x.toFixed(1));
+    b.setAttribute("cy", y.toFixed(1));
+    b.setAttribute("opacity", o.toFixed(2));
+    b.setAttribute("r", (R * s).toFixed(2));
+  };
+
+  /* go there, hold, come back — staggered per ball */
+
+  const cyc = (t, i) => {
+    const d = i * .02;
+    const rise = ease(clamp((t - .08 - d) / .3));
+    const fall = ease(clamp((t - .7 - d) / .12));
+    return rise - fall;
+  };
+
+
+  // ==================================================
+  // 01 FRAME — BALLS DROP AND SETTLE INSIDE THE BOX
+  // ==================================================
+
+  const frame = g => {
+
+    // Box outline
+    el("path", {
+      d: "M36 24V102H164V24",
+      class: "mm-line"
+    }, g);
+
+    // A subtle floor line inside the box
+    el("path", {
+      d: "M38 102H162",
+      class: "mm-line",
+      opacity: ".45"
+    }, g);
+
+    const balls = makeBalls(g);
+
+    // Compact arrangement: all balls rest on the box floor.
+    const LAND = [
+      [55,94],[75,94],[95,94],
+      [115,94],[135,94],
+      [65,80],[85,80],[105,80],[125,80]
+    ];
+
+    // Different starting positions above the container
+    const START = [
+      [49,-14],[72,-24],[96,-10],
+      [119,-28],[143,-16],
+      [60,-38],[84,-46],[108,-34],[132,-42]
+    ];
+
+    return t => {
+
+      balls.forEach((b, i) => {
+
+        // Stagger the falling motion
+        const delay = i * .035;
+        const u = clamp((t - .05 - delay) / .30);
+
+        const p = bounce(u);
+
+        const [sx, sy] = START[i];
+        const [tx, ty] = LAND[i];
+
+        // Fall into the container
+        let x = lerp(sx, tx, ease(u));
+        let y = lerp(sy, ty, p);
+
+        // Small settling bounce on landing
+        const settle = clamp((t - .34 - delay) / .13);
+
+        if (settle > 0) {
+          const bounceAmount =
+            Math.sin(settle * Math.PI * 2) *
+            (1 - settle) * 3;
+
+          y += bounceAmount;
+        }
+
+        // All balls remain visible and settle inside the box
+        setB(b, x, y, 1);
+      });
+    };
+  };
+
+
+  // ==================================================
+  // 02 DISTILL — REFINED FUNNEL
+  // ==================================================
+
+  const distill = g => {
+
+    // Smooth funnel silhouette
+    el("path", {
+      d: `
+        M26 15
+        H174
+        C174 27 151 40 125 56
+        L111 65
+        V82
+        Q111 86 107 86
+        H93
+        Q89 86 89 82
+        V65
+        L75 56
+        C49 40 26 27 26 15
+        Z
+      `,
+      class: "mm-line mm-fill"
+    }, g);
+
+
+
+    // Neck outlet
+    el("path", {
+      d: "M89 83 H111",
+      class: "mm-line",
+      opacity: ".8"
+    }, g);
+
+    const SIG = [1, 4, 7];
+
+    const LAND = [
+      [70,106],
+      [100,106],
+      [130,106]
+    ];
+
+    const balls = makeBalls(
+      g,
+      i => SIG.includes(i) ? "mm-sig" : "mm-soft"
+    );
+
+    return t => {
+
+      const out = 1 - clamp((t - .9) / .09);
+      const inn = clamp(t / .06);
+
+      balls.forEach((b, i) => {
+
+        // Starting positions spread across the wide opening
+        const sx = 43 + i * 14;
+        const sy = 22 + (i % 3) * 3;
+
+        // All balls converge smoothly towards the funnel neck
+        const tx = 100 + (i % 3 - 1) * 3;
+        const ty = 52;
+
+        const u1 = ease(
+          clamp((t - .08 - i * .02) / .25)
+        );
+
+        let x = lerp(sx, tx, u1);
+        let y = lerp(sy, ty, u1);
+
+        let o = inn * out;
+        let s = 1;
+
+        const k = SIG.indexOf(i);
+
+        if (k < 0) {
+
+          // Non-signal balls fade away inside the funnel
+          const f = clamp((u1 - .5) / .5);
+
+          o *= 1 - f;
+          s = 1 - .4 * f;
+
+        } else {
+
+          // Signal balls pass through the narrow neck
+          const u2 = ease(
+            clamp((t - .4 - k * .08) / .22)
+          );
+
+          if (u2 > 0) {
+
+            if (u2 < .5) {
+
+              // Descend through the neck
+              x = 100;
+              y = lerp(52, 88, u2 * 2);
+
+            } else {
+
+              // Spread out neatly below the outlet
+              x = lerp(
+                100,
+                LAND[k][0],
+                (u2 - .5) * 2
+              );
+
+              y = lerp(
+                88,
+                LAND[k][1],
+                (u2 - .5) * 2
+              );
+            }
+          }
+        }
+
+        setB(b, x, y, o, s);
+      });
+    };
+  };
+
+
+  // ==================================================
+  // 03 RESOLVE — UNCHANGED
+  // ==================================================
+
+  const resolve = g => {
+
+    const base = el(
+      "path",
+      { d: "M10 60H190", class: "mm-line" },
+      g
+    );
+
+    const balls = makeBalls(g);
+
+    return t => {
+
+      base.setAttribute(
+        "opacity",
+        (.55 * cyc(t, N - 1)).toFixed(2)
+      );
+
+      balls.forEach((b, i) => {
+
+        const p = cyc(t, i);
+
+        setB(
+          b,
+          lerp(MESSY[i][0], ROW[i][0], p),
+          lerp(MESSY[i][1], ROW[i][1], p)
+        );
+      });
+    };
+  };
+
+
+  // ==================================================
+  // 04 DESIGN — UNCHANGED
+  // ==================================================
+
+  const design = g => {
+
+    const line = el(
+      "polyline",
+      { class: "mm-line", points: "" },
+      g
+    );
+
+    const balls = makeBalls(g, () => "mm-sig");
+
+    return t => {
+
+      const pts = [];
+
+      balls.forEach((b, i) => {
+
+        const p = cyc(t, i);
+
+        const x = lerp(ROW[i][0], MPAT[i][0], p);
+        const y = lerp(ROW[i][1], MPAT[i][1], p);
+
+        setB(b, x, y);
+
+        pts.push(
+          x.toFixed(1) + "," + y.toFixed(1)
+        );
+      });
+
+      line.setAttribute("points", pts.join(" "));
+
+      line.setAttribute(
+        "opacity",
+        (.6 * clamp((cyc(t, N - 1) - .7) / .3)).toFixed(2)
+      );
+    };
+  };
+
+
+  // ==================================================
+  // 05 COMMIT — UNCHANGED
+  // ==================================================
+
+  const commit = g => {
+
+    const X = [28, 76, 124, 172], Y = 78;
+
+    el(
+      "path",
+      {
+        d: `M${X[0]} ${Y}H${X[3]}`,
+        class: "mm-line",
+        opacity: .35
+      },
+      g
+    );
+
+    const prog = el(
+      "path",
+      {
+        d: "",
+        class: "mm-line",
+        style: "stroke:#263F4A;opacity:1;stroke-width:2.4"
+      },
+      g
+    );
+
+    const nodes = X.slice(0, 3).map(
+      x => el(
+        "circle",
+        {
+          cx: x,
+          cy: Y,
+          r: 5,
+          fill: "#F6F4E8",
+          stroke: "#365B6D",
+          "stroke-width": 1.6
+        },
+        g
+      )
+    );
+
+    const pulse = el(
+      "circle",
+      {
+        cx: X[3],
+        cy: Y,
+        r: 6,
+        fill: "none",
+        stroke: "#365B6D",
+        "stroke-width": 1.4
+      },
+      g
+    );
+
+    const flag = el("g", {}, g);
+
+    el(
+      "path",
+      {
+        d: "M0 0V-34",
+        stroke: "#263F4A",
+        "stroke-width": 2.2,
+        "stroke-linecap": "round"
+      },
+      flag
+    );
+
+    el(
+      "path",
+      {
+        d: "M0 -34L20 -27L0 -20Z",
+        class: "mm-flag"
+      },
+      flag
+    );
+
+    const base = el(
+      "circle",
+      { cx: X[3], cy: Y, r: 5, class: "mm-sig" },
+      g
+    );
+
+    const trail2 = el("circle", { r: 4, class: "mm-ball" }, g);
+    const trail1 = el("circle", { r: 5, class: "mm-ball" }, g);
+    const lead = el("circle", { r: R, class: "mm-sig" }, g);
+
+    return t => {
+
+      g.setAttribute(
+        "opacity",
+        (1 - clamp((t - .9) / .09)).toFixed(2)
+      );
+
+      const u = ease(clamp((t - .08) / .6));
+      const x = lerp(X[0], X[3], u);
+
+      prog.setAttribute(
+        "d",
+        `M${X[0]} ${Y}H${x.toFixed(1)}`
+      );
+
+      nodes.forEach((n, i) =>
+        n.setAttribute(
+          "fill",
+          x >= X[i] - 1 ? "#263F4A" : "#F6F4E8"
+        )
+      );
+
+      lead.setAttribute("cx", x.toFixed(1));
+      lead.setAttribute("cy", Y - 12);
+
+      trail1.setAttribute(
+        "cx",
+        Math.max(X[0] - 6, x - 13).toFixed(1)
+      );
+
+      trail1.setAttribute("cy", Y - 12);
+
+      trail2.setAttribute(
+        "cx",
+        Math.max(X[0] - 10, x - 24).toFixed(1)
+      );
+
+      trail2.setAttribute("cy", Y - 12);
+
+      trail1.setAttribute(
+        "opacity",
+        (.55 * clamp(u * 8)).toFixed(2)
+      );
+
+      trail2.setAttribute(
+        "opacity",
+        (.3 * clamp(u * 8)).toFixed(2)
+      );
+
+      const f = ease(clamp((t - .66) / .12));
+
+      flag.setAttribute(
+        "transform",
+        `translate(${X[3]} ${Y}) scale(1 ${Math.max(f, .001).toFixed(3)})`
+      );
+
+      const pu = clamp((t - .68) / .22);
+
+      pulse.setAttribute(
+        "r",
+        (6 + 16 * pu).toFixed(1)
+      );
+
+      pulse.setAttribute(
+        "opacity",
+        (pu > 0 ? 1 - pu : 0).toFixed(2)
+      );
+
+      base.setAttribute("opacity", f > 0 ? 1 : 0);
+      lead.setAttribute("opacity", (1 - f).toFixed(2));
+    };
+  };
+
+
+  // ==================================================
+  // INITIALISE ALL FIVE ANIMATIONS
+  // ==================================================
+
+  const builders = [
+    frame,
+    distill,
+    resolve,
+    design,
+    commit
+  ];
+
+  const STATIC_T = [.72, .75, .6, .6, .8];
+
+  const reduce = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  const scenes = [];
+
+  steps.forEach((step, i) => {
+
+    if (!builders[i]) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "mm-anim";
+    wrap.setAttribute("aria-hidden", "true");
+
+    const svg = el(
+      "svg",
+      {
+        viewBox: "0 0 200 120",
+        preserveAspectRatio: "xMidYMid meet"
+      }
+    );
+
+    const g = el("g", {}, svg);
+
+    wrap.appendChild(svg);
+    step.insertBefore(wrap, step.children[1]);
+
+    const update = builders[i](g);
+
+    scenes.push({
+      wrap,
+      update,
+      visible: false
+    });
+
+    update(STATIC_T[i]);
+  });
+
+  if (reduce) return;
+
+  const io = "IntersectionObserver" in window
+    ? new IntersectionObserver(es =>
+        es.forEach(e => {
+
+          const s = scenes.find(
+            x => x.wrap === e.target
+          );
+
+          if (s) s.visible = e.isIntersecting;
+
+        }),
+        { threshold: 0.05 }
+      )
+    : null;
+
+  scenes.forEach(s =>
+    io ? io.observe(s.wrap) : (s.visible = true)
+  );
+
+  const PERIOD = 7000;
+
+  const loop = now => {
+
+    const t = (now % PERIOD) / PERIOD;
+
+    scenes.forEach(s =>
+      s.visible && s.update(t)
+    );
+
+    requestAnimationFrame(loop);
+  };
+
+  requestAnimationFrame(loop);
+
+})();
+</script>
 </body>
 </html>

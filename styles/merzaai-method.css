@@ -954,3 +954,144 @@ p { text-wrap: pretty; }
   .hero-bottom { font-size: 9px; }
   .hero-bottom span:last-child { display: none; }
 }
+/* ---------- image slots (replace src="" with your image) ---------- */
+
+.img-slot {
+  position: relative; overflow: hidden; margin: 0;
+  display: grid; place-items: center;
+  min-height: 220px;
+  border-radius: var(--radius-lg);
+  border: 1.5px dashed rgba(54,91,109,.38);
+  background:
+    repeating-linear-gradient(135deg, rgba(54,91,109,.055) 0 12px, transparent 12px 24px),
+    #E4EAE5;
+}
+.img-slot img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; z-index: 1; filter: saturate(.85);
+  transition: transform 1s var(--ease);
+}
+.img-slot img[src=""], .img-slot img:not([src]) { display: none; }
+.img-slot:has(img[src]:not([src=""])) { border-color: transparent; }
+.img-slot:hover img { transform: scale(1.04); }
+.slot-label {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 20px; text-align: center;
+  color: var(--primary);
+  font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+}
+.slot-label svg { width: 34px; height: 34px; opacity: .7; }
+.slot-label span { font-size: 12px; font-weight: 500; letter-spacing: .02em; text-transform: none; opacity: .75; max-width: 260px; }
+.img-slot.dark {
+  border-color: rgba(246,244,232,.28);
+  background:
+    repeating-linear-gradient(135deg, rgba(246,244,232,.04) 0 12px, transparent 12px 24px),
+    rgba(246,244,232,.05);
+}
+.img-slot.dark .slot-label { color: #D2DEDA; }
+
+/* ---------- marquee ---------- */
+
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: rgba(255,255,255,.4);
+  padding-block: 22px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track { display: flex; width: max-content; animation: marquee 40s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track span {
+  display: inline-flex; align-items: center; gap: 34px; padding-right: 34px;
+  font: 700 clamp(18px, 2vw, 26px)/1 var(--serif); letter-spacing: -.03em;
+  color: var(--ink); white-space: nowrap;
+}
+.marquee-track span:nth-child(even) { color: transparent; -webkit-text-stroke: 1px rgba(38,63,74,.45); }
+.marquee-track span::after { content: ""; width: 9px; height: 9px; background: var(--primary); transform: rotate(45deg); border-radius: 2px; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+
+/* ---------- overview: icons + connecting line ---------- */
+
+.overview-symbol svg { width: 20px; height: 20px; display: block; }
+.flow-track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 18px; }
+.flow-track div { position: relative; height: 14px; }
+.flow-track div::before {
+  content: ""; position: absolute; left: 22px; top: 0; z-index: 2;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--mist); border: 2px solid var(--primary);
+  transition: background .3s; transition-delay: var(--td, 0s);
+}
+.flow-track div::after {
+  content: ""; position: absolute; left: 36px; right: -36px; top: 6px; height: 2px;
+  background: var(--primary); transform: scaleX(0); transform-origin: left;
+  transition: transform .8s var(--ease); transition-delay: var(--td, 0s);
+}
+.flow-track div:last-child::after { right: 0; background: linear-gradient(90deg, var(--primary), transparent); }
+.flow-track.visible div::after { transform: scaleX(1); }
+.flow-track.visible div::before { background: var(--primary); }
+
+/* ---------- intro image ---------- */
+
+.intro-slot { aspect-ratio: 4 / 3; min-height: 0; border-radius: var(--radius); }
+
+/* ---------- stage cards: illustration ---------- */
+
+.sc-art {
+  margin-top: 34px; width: min(100%, 300px);
+  padding: 14px 16px;
+  border: 1px solid currentColor; border-radius: 18px;
+  color: inherit; opacity: .9;
+  background: rgba(255,255,255,.35);
+}
+.sc:nth-of-type(4) .sc-art, .sc:nth-of-type(5) .sc-art { background: rgba(246,244,232,.06); border-color: rgba(246,244,232,.25); }
+.sc-art svg { display: block; width: 100%; height: auto; }
+.sc-art .ln { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: .55; }
+.sc-art .dt { fill: currentColor; }
+.sc-art .soft { fill: currentColor; opacity: .3; }
+.sc-art .fl { fill: currentColor; }
+
+/* ---------- deliverables image ---------- */
+
+.deliver-slot { margin-top: 34px; aspect-ratio: 16 / 10; min-height: 0; border-radius: var(--radius); }
+
+/* ---------- cta image ---------- */
+
+.cta-side { display: flex; flex-direction: column; align-items: flex-end; gap: 22px; flex: none; }
+.cta-side .img-slot { width: 300px; min-height: 0; aspect-ratio: 4 / 3; border-radius: var(--radius); }
+
+/* ---------- responsive additions ---------- */
+
+@media (max-width: 1050px) {
+  .flow-track { display: none; }
+}
+@media (max-width: 800px) {
+  .sc-art { width: min(100%, 260px); margin-top: 24px; }
+  .cta-side { align-items: flex-start; margin-top: 30px; }
+  .cta-side .img-slot { width: 100%; }
+  .cta .cta-side .light-button { margin-top: 0; }
+}
+
+/* method animations */
+.mm-anim {
+  height: 128px; margin-bottom: 20px;
+  border-radius: 14px; overflow: hidden;
+  background: linear-gradient(180deg, rgba(54,91,109,.08), rgba(54,91,109,.03));
+  border: 1px solid rgba(38,63,74,.08);
+}
+.mm-anim svg { width: 100%; height: 100%; display: block; }
+.mm-line { fill: none; stroke: #365B6D; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: .55; }
+.mm-fill { fill: rgba(54,91,109,.07); }
+.mm-ball { fill: #365B6D; }
+.mm-sig  { fill: #263F4A; }
+.mm-soft { fill: #8FAAB5; }
+.mm-flag { fill: #263F4A; }
+
+
+.overview-step { min-height: 400px; justify-content: flex-start; }
+.overview-step > div:last-child { margin-top: auto; }
+.overview-step .mm-anim { margin: 22px 0 18px; transition: background .35s, border-color .35s; }
+.overview-step:hover .mm-anim { background: rgba(246,244,232,.92); border-color: transparent; }
+@media (max-width: 540px) { .overview-step, .overview-step:last-child { min-height: 0; } }
+

@@ -16,6 +16,7 @@
 
 <body>
 
+
 <div class="progress" id="progress"></div>
 
 <header class="header" id="header">
@@ -84,6 +85,8 @@
         <div class="visual-label visual-caption">From complexity to alignment</div>
       </figure>
 
+    
+
       <div class="float-note note-one">Competing priorities</div>
       <div class="float-note note-two">Unresolved choices</div>
       <div class="float-note note-three">Unclear ownership</div>
@@ -95,6 +98,11 @@
     </div>
 
   </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track"><span>Leadership alignment</span><span>Critical choices</span><span>Shared direction</span><span>Target state</span><span>Executable roadmap</span><span>Clear ownership</span><span>Decisions that stick</span><span>Momentum</span><span>Leadership alignment</span><span>Critical choices</span><span>Shared direction</span><span>Target state</span><span>Executable roadmap</span><span>Clear ownership</span><span>Decisions that stick</span><span>Momentum</span></div>
+  </div>
 
   <!-- INTRO -->
   <section class="dark-intro">
@@ -183,7 +191,7 @@
       <div class="signal-list">
 
         <article class="signal reveal">
-          <div class="signal-no">01</div>
+          <div class="signal-side"><div class="signal-no">01</div><div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-5 4 10 2-5h7"/></svg></div></div>
           <h3>High activity. Limited progress.</h3>
 
           <div>
@@ -197,7 +205,7 @@
         </article>
 
         <article class="signal reveal">
-          <div class="signal-no">02</div>
+          <div class="signal-side"><div class="signal-no">02</div><div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div></div>
           <h3>Different versions of the destination.</h3>
 
           <div>
@@ -211,7 +219,7 @@
         </article>
 
         <article class="signal reveal">
-          <div class="signal-no">03</div>
+          <div class="signal-side"><div class="signal-no">03</div><div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><circle cx="16" cy="10" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 15c3 0 5 2 5 5"/></svg></div></div>
           <h3>Ownership without clear accountability.</h3>
 
           <div>
@@ -225,7 +233,7 @@
         </article>
 
         <article class="signal reveal">
-          <div class="signal-no">04</div>
+          <div class="signal-side"><div class="signal-no">04</div><div class="signal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 01-14.5 4.6M4 12a8 8 0 0114.5-4.6"/><path d="M19 3v5h-5M5 21v-5h5"/></svg></div></div>
           <h3>Decisions that keep circulating.</h3>
 
           <div>
@@ -249,6 +257,23 @@
       <div class="reveal">
         <div class="eyebrow">The cost of drift</div>
         <h2>Unresolved complexity has a <em>cost.</em></h2>
+
+        <div class="drift-viz" aria-hidden="true">
+          <svg viewBox="0 0 400 230" fill="none">
+            <circle cx="350" cy="115" r="26" class="dv-target"/>
+            <circle cx="350" cy="115" r="14" class="dv-target"/>
+            <circle cx="350" cy="115" r="4" fill="#365B6D" opacity=".35"/>
+            <path class="dv-path" d="M40 115 C140 115 200 60 330 22"/>
+            <path class="dv-path" d="M40 115 C140 115 210 90 320 70"/>
+            <path class="dv-path" d="M40 115 C150 115 220 140 300 160"/>
+            <path class="dv-path" d="M40 115 C140 115 200 170 320 208"/>
+            <path class="dv-path dv-near" d="M40 115 C150 115 220 118 290 124"/>
+            <g fill="#365B6D"><circle cx="330" cy="22" r="4"/><circle cx="320" cy="70" r="4"/><circle cx="300" cy="160" r="4"/><circle cx="320" cy="208" r="4"/><circle cx="290" cy="124" r="4"/></g>
+            <circle cx="40" cy="115" r="9" fill="#263F4A"/>
+            <text x="16" y="146">Same programme</text>
+          </svg>
+          <p>Effort keeps moving, but in different directions.</p>
+        </div>
       </div>
 
       <div class="reveal">
@@ -303,15 +328,21 @@
           </h2>
 
           <p>
-            We help leadership teams move a complex or stuck transformation forward through a focused 4–6 week intervention. We get underneath the noise, clarify the real problem, identify the few decisions that actually shape the outcome, and bring the right people together to make them. Those decisions are then translated into one coherent target state and an owned path to implementation.
-<br><br>
-The result is leadership knowing what has been decided, what you are building, and what happens next.
+            In 4–6 weeks, we clarify the real problem, resolve the few decisions that matter and turn them into a clear target state and an owned roadmap, so leadership knows what has been decided and what happens next.
           </p>
         </div>
 
       </div>
 
-      <div class="process reveal">
+      <div class="rail-wrap reveal">
+        <div class="track" aria-hidden="true">
+          <div class="track-dot" style="--td:.1s"></div>
+          <div class="track-dot" style="--td:.4s"></div>
+          <div class="track-dot" style="--td:.7s"></div>
+          <div class="track-dot" style="--td:1s"></div>
+          <div class="track-dot" style="--td:1.3s"></div>
+        </div>
+      <div class="process">
 
         <div class="process-step">
           <small>01 / FRAME</small>
@@ -344,11 +375,100 @@ The result is leadership knowing what has been decided, what you are building, a
         </div>
 
       </div>
+      </div>
     </div>
   </section>
 
+  <!-- FEATURE: image band (copy taken from the section above) -->
+  <section class="feature" style="padding-block: clamp(56px, 6vw, 90px);">
+    <div class="container feature-grid">
+
+        <figure class="img-slot big reveal">
+          <img
+  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+  alt="Senior leadership team collaborating during a transformation workshop"
+  loading="lazy"
+>
+          <div class="slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>Image space 01<span>Portrait / tall · 1200 × 1500 · Leadership workshop, decision-making session</span></div>
+        </figure>
+
+      <div class="feature-card reveal">
+        <div>
+          <div class="eyebrow">The intervention</div>
+          <div class="weeks"><strong>4–6</strong><span>week focused<br>intervention</span></div>
+        </div>
+        <blockquote>Leadership knowing <em>what has been decided,</em> what you are building, and what happens next.</blockquote>
+      </div>
+
+        <figure class="img-slot small reveal">
+          <img
+  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=85"
+  alt="Strategic planning documents and business roadmap"
+  loading="lazy"
+>
+          <div class="slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>Image space 02<span>Landscape · 1200 × 800 · Whiteboard, sticky notes or roadmap close-up</span></div>
+        </figure>
+
+    </div>
+  </section>
+
+  <style>
+    /* ---------- target panel: fill the height ---------- */
+
+.target-grid { align-items: stretch; }
+
+.target-panel {
+  display: flex; flex-direction: column;
+  padding: clamp(28px, 3vw, 44px);
+}
+
+.roadmap-list {
+  flex: 1;
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding-block: 10px;
+}
+.roadmap { padding: 26px 14px; grid-template-columns: 52px 1fr; gap: 22px; }
+.roadmap-num { width: 52px; height: 52px; font-size: 16px; }
+.roadmap:not(:last-child) .roadmap-num::after { top: 52px; }
+.roadmap strong { font-size: clamp(20px, 1.9vw, 25px); margin-bottom: 8px; }
+.roadmap p { font-size: 15px; line-height: 1.65; max-width: 420px; }
+
+.panel-timeline {
+  margin-top: 14px; padding: 22px 22px 18px;
+  background: rgba(246,244,232,.06);
+  border: 1px solid rgba(246,244,232,.14);
+  border-radius: var(--radius);
+}
+.pt-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.pt-head span { color: #C3D1D0; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.pt-head strong { font: 800 clamp(22px, 2.2vw, 30px)/1 var(--serif); letter-spacing: -.03em; }
+.pt-bar { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.pt-bar i {
+  display: block; height: 8px; border-radius: 8px;
+  background: rgba(246,244,232,.85);
+  transform-origin: left; transform: scaleX(0);
+  transition: transform .7s var(--ease);
+}
+.target-panel.visible .pt-bar i { transform: scaleX(1); }
+.target-panel.visible .pt-bar i:nth-child(2) { transition-delay: .15s; opacity: .8; }
+.target-panel.visible .pt-bar i:nth-child(3) { transition-delay: .3s;  opacity: .65; }
+.target-panel.visible .pt-bar i:nth-child(4) { transition-delay: .45s; opacity: .5; }
+.target-panel.visible .pt-bar i:nth-child(5) { transition-delay: .6s;  opacity: .38; }
+.pt-labels { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-top: 10px; }
+.pt-labels span { color: rgba(246,244,232,.6); font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+
+@media (max-width: 800px) {
+  .roadmap { padding: 20px 10px; grid-template-columns: 44px 1fr; gap: 16px; }
+  .roadmap-num { width: 44px; height: 44px; }
+  .roadmap:not(:last-child) .roadmap-num::after { top: 44px; }
+}
+@media (max-width: 540px) {
+  .pt-labels span { font-size: 8px; letter-spacing: .04em; }
+}
+  </style>
+
   <!-- TARGET STATE -->
-  <section class="target section-padding">
+    <section class="target section-padding">
     <div class="container target-grid">
 
       <div class="reveal">
@@ -364,6 +484,14 @@ The result is leadership knowing what has been decided, what you are building, a
           direction that helps leaders make decisions, gives teams a
           coherent frame for their work and makes the next steps visible.
         </p>
+
+        <figure class="img-slot dark target-slot">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=85"
+            alt="Team working together towards a shared organisational direction"
+            loading="lazy"
+          >
+        </figure>
       </div>
 
       <div class="target-panel reveal">
@@ -373,35 +501,52 @@ The result is leadership knowing what has been decided, what you are building, a
           <span>Target state / 02</span>
         </div>
 
-        <div class="roadmap">
-          <div class="roadmap-num">1</div>
-          <div>
-            <strong>Shared understanding</strong>
-            <p>A clear definition of the challenge, outcomes and constraints.</p>
+        <div class="roadmap-list">
+
+          <div class="roadmap">
+            <div class="roadmap-num">1</div>
+            <div>
+              <strong>Shared understanding</strong>
+              <p>A clear definition of the challenge, outcomes and constraints.</p>
+            </div>
           </div>
+
+          <div class="roadmap">
+            <div class="roadmap-num">2</div>
+            <div>
+              <strong>Agreed leadership choices</strong>
+              <p>Explicit decisions, trade-offs and principles to guide the work.</p>
+            </div>
+          </div>
+
+          <div class="roadmap">
+            <div class="roadmap-num">3</div>
+            <div>
+              <strong>Coherent target state</strong>
+              <p>A connected view of what needs to change and how the parts fit.</p>
+            </div>
+          </div>
+
+          <div class="roadmap">
+            <div class="roadmap-num">4</div>
+            <div>
+              <strong>Executable roadmap</strong>
+              <p>Sequenced priorities, ownership, dependencies and next actions.</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="roadmap">
-          <div class="roadmap-num">2</div>
-          <div>
-            <strong>Agreed leadership choices</strong>
-            <p>Explicit decisions, trade-offs and principles to guide the work.</p>
+        <div class="panel-timeline">
+          <div class="pt-head">
+            <span>Focused intervention</span>
+            <strong>4–6 weeks</strong>
           </div>
-        </div>
-
-        <div class="roadmap">
-          <div class="roadmap-num">3</div>
-          <div>
-            <strong>Coherent target state</strong>
-            <p>A connected view of what needs to change and how the parts fit.</p>
+          <div class="pt-bar">
+            <i></i><i></i><i></i><i></i><i></i>
           </div>
-        </div>
-
-        <div class="roadmap">
-          <div class="roadmap-num">4</div>
-          <div>
-            <strong>Executable roadmap</strong>
-            <p>Sequenced priorities, ownership, dependencies and next actions.</p>
+          <div class="pt-labels">
+            <span>Frame</span><span>Distill</span><span>Resolve</span><span>Design</span><span>Commit</span>
           </div>
         </div>
 
@@ -431,6 +576,7 @@ The result is leadership knowing what has been decided, what you are building, a
 
         <article class="outcome-card reveal">
           <small>01 / ALIGNMENT</small>
+          <div class="oc-viz" aria-hidden="true"><svg viewBox="0 0 140 80" fill="none"><path d="M8 14 C60 14 70 40 112 40M8 40 H112M8 66 C60 66 70 40 112 40" stroke="#365B6D" stroke-width="2" stroke-linecap="round" opacity=".55"/><g fill="#8FAAB5"><circle cx="8" cy="14" r="4"/><circle cx="8" cy="40" r="4"/><circle cx="8" cy="66" r="4"/></g><circle cx="122" cy="40" r="10" fill="#263F4A"/><path d="M117 40l3.5 3.5 6-7" stroke="#F6F4E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div>
             <strong>One agreed direction</strong>
             <p>Leadership and teams work from a shared view of the challenge and destination.</p>
@@ -439,6 +585,7 @@ The result is leadership knowing what has been decided, what you are building, a
 
         <article class="outcome-card reveal">
           <small>02 / DECISIONS</small>
+          <div class="oc-viz" aria-hidden="true"><svg viewBox="0 0 140 80" fill="none"><path d="M8 40 H50" stroke="#263F4A" stroke-width="2.5" stroke-linecap="round"/><path d="M50 40 C80 40 90 16 124 16" stroke="#263F4A" stroke-width="2.5" stroke-linecap="round"/><path d="M50 40 C80 40 90 64 124 64" stroke="#365B6D" stroke-width="2" stroke-dasharray="4 5" opacity=".35"/><circle cx="50" cy="40" r="5" fill="#F6F4E8" stroke="#263F4A" stroke-width="2"/><circle cx="124" cy="16" r="6" fill="#365B6D"/><circle cx="124" cy="64" r="5" fill="none" stroke="#365B6D" opacity=".35"/></svg></div>
           <div>
             <strong>Choices that move forward</strong>
             <p>Trade-offs, ownership and decision rights are clear enough to act on.</p>
@@ -447,6 +594,7 @@ The result is leadership knowing what has been decided, what you are building, a
 
         <article class="outcome-card reveal">
           <small>03 / EXECUTION</small>
+          <div class="oc-viz" aria-hidden="true"><svg viewBox="0 0 140 80" fill="none"><path d="M10 60 H118" stroke="#365B6D" stroke-width="2" opacity=".3"/><path d="M10 60 H84" stroke="#263F4A" stroke-width="2.5" stroke-linecap="round"/><g stroke="#263F4A" stroke-width="2"><circle cx="10" cy="60" r="5" fill="#263F4A"/><circle cx="47" cy="60" r="5" fill="#263F4A"/><circle cx="84" cy="60" r="5" fill="#263F4A"/><circle cx="118" cy="60" r="5" fill="#F6F4E8"/></g><path d="M118 55 V22" stroke="#263F4A" stroke-width="2" stroke-linecap="round"/><path d="M118 22 L134 28 L118 34Z" fill="#365B6D"/></svg></div>
           <div>
             <strong>A roadmap with purpose</strong>
             <p>Priorities connect to outcomes, dependencies and accountable next steps.</p>
@@ -476,9 +624,19 @@ The result is leadership knowing what has been decided, what you are building, a
         </p>
       </div>
 
-      <a class="cta-button" href="contact.html">
-        Discuss your transformation <span>↗</span>
-      </a>
+      <div class="cta-side">
+        <figure class="img-slot dark">
+          <img
+  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+  alt="Business advisors and leadership team discussing transformation strategy"
+  loading="lazy"
+>
+          <div class="slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>Image space 04<span>800 × 600 · Advisor portrait or client conversation</span></div>
+        </figure>
+        <a class="cta-button" href="contact.html">
+          Discuss your transformation <span>↗</span>
+        </a>
+      </div>
 
     </div>
   </section>
@@ -504,7 +662,7 @@ The result is leadership knowing what has been decided, what you are building, a
     <div class="footer-column">
       <small>Explore</small>
       <a href="what-we-solve.html">What We Solve</a>
-      <a href="method.html">The Merzaai Method</a>
+      <a href="the-merzaai-method.html">The Merzaai Method</a>
       <a href="insights.html">Insights</a>
     </div>
 

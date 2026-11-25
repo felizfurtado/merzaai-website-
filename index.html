@@ -95,6 +95,57 @@
   </div>
 </section>
 
+
+<style>
+  /* ---------- marquee strip ---------- */
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: rgba(255,255,255,.4);
+  padding-block: 22px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track span {
+  display: inline-flex; align-items: center; gap: 34px;
+  padding-right: 34px;
+  font: 700 clamp(18px, 2vw, 26px)/1 var(--serif);
+  letter-spacing: -.03em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.marquee-track span:nth-child(even) {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(38,63,74,.45);
+}
+.marquee-track span::after {
+  content: "";
+  width: 9px; height: 9px;
+  background: var(--primary);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+</style>
+
+<!-- MARQUEE STRIP -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Transformation Clarity</span><span>Treasury Transformation</span><span>Financial Clarity</span><span>Shared priorities</span><span>Clear decision ownership</span><span>Measurable progress</span><span>Less noise</span><span>Better decisions</span>
+    <span>Transformation Clarity</span><span>Treasury Transformation</span><span>Financial Clarity</span><span>Shared priorities</span><span>Clear decision ownership</span><span>Measurable progress</span><span>Less noise</span><span>Better decisions</span>
+  </div>
+</div>
+
 <!-- RECOGNITION -->
 <section class="recognition" id="recognition">
   <div class="container">
