@@ -28,14 +28,38 @@
 
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-        <nav class="nav" id="mainNav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="what-we-solve.html">What We Solve</a>
-    <a href="the-psychology-of-transformation.html">Psychology</a>
-    <a href="the-merzaai-method.html">The Merzaai Method</a>
-    <a href="insights.html">Insights</a>
-    <a href="contact.html" class="nav-cta">Let's Talk ↗</a>
+        <link rel="stylesheet" href="styles/nav-dropdown.css">
+
+<nav class="nav" id="mainNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+
+  <div class="nav-drop">
+    <a href="what-we-solve.html" class="nav-drop-toggle" aria-haspopup="true">
+      What We Solve <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i>
+    </a>
+    <div class="nav-drop-menu">
+      <a href="transformation-clarity.html">
+        <span class="nav-drop-ico"><i class="fa-solid fa-compass" aria-hidden="true"></i></span>
+        <span>
+          <strong>Transformation Clarity</strong>
+          <small>When change is busy but stuck</small>
+        </span>
+      </a>
+      <a href="treasury-transformation.html">
+        <span class="nav-drop-ico"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span>
+        <span>
+          <strong>Treasury Transformation</strong>
+          <small>When the operating model needs to catch up</small>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <a href="the-psychology-of-transformation.html">Psychology</a>
+  <a href="the-merzaai-method.html">The Merzaai Method</a>
+  <a href="insights.html">Insights</a>
+  <a href="contact.html" class="nav-cta">Let's Talk ↗</a>
 </nav>
 </header>
 

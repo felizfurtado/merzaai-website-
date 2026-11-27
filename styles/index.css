@@ -934,7 +934,7 @@ p { text-wrap: pretty; }
   .container { width: 88%; }
   .header { height: 72px; padding-inline: 6%; }
   .header.scrolled { height: 64px; }
-  .brand img { width: 125px; }
+  .brand img { width: 50px; }
   .menu-toggle { display: block; }
 
   .nav {
